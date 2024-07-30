@@ -304,6 +304,7 @@ body.dark-mode .navbar-toggler .fa-bars {
     transform: scale(1.1);
 }
 
+
 /*** Booking ***/
 .booking {
     background: linear-gradient(rgba(15, 23, 43, .7), rgba(15, 23, 43, .7)), url('../img/booking.jpg');
@@ -558,6 +559,8 @@ body.dark-mode .package-item img {
     filter: brightness(0.8); /* Adjusts brightness for images in dark mode */
 }
 
+
+
 /* Optional: Adjust text colors if needed */
 body.dark-mode .package-item h3,
 body.dark-mode .package-item p {
@@ -577,7 +580,7 @@ body.dark-mode .service-item {
 }
 
 body.dark-mode .destination a:hover img,
-body.dark-mode .package-item img {
+body.dark-mode .package-item:hover img {
     transform: scale(1.1);
 }
 
