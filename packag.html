@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Packages</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="./img/icon.png" sizes="48x48" type="image/png" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link
+      href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="https://js.stripe.com/v3/"></script>
+  </head>
+
+  <body>
+    <!--############### Top NavBar #################-->
+    <div class="container-fluid bg-dark px-5 d-none d-lg-block">
+      <div class="row gx-0">
+        <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+          <div class="d-inline-flex align-item-center" style="height: 45px">
+            <small class="me-3 text-light"
+              ><i class="fa fa-map-marked-alt me-2"></i>123 Street, New York,
+              USA</small
+            >
+            <small class="me-3 text-light"
+              ><i class="fa fa-phone-alt me-2"></i>+91 9726461940</small
+            >
+            <small class="me-3 text-light"
+              ><i class="fa fa-envelop-open me-2"></i>info@example</small
+            >
+          </div>
+        </div>
+        <!-- social button -->
+        <div class="col-lg-4 text-center text-lg-end">
+          <div class="d-inline-flex align-items-center" style="height: 45px">
+            <a
+              class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2"
+              href=""
+              ><i class="fab fa-twitter fw-normal"></i
+            ></a>
+            <a
+              class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2"
+              href=""
+              ><i class="fab fa-facebook-f fw-normal"></i
+            ></a>
+            <a
+              class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2"
+              href=""
+              ><i class="fab fa-linkedin-in fw-normal"></i
+            ></a>
+            <a
+              class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2"
+              href=""
+              ><i class="fab fa-instagram fw-normal"></i
+            ></a>
+            <a
+              class="btn btn-sm btn-outline-light btn-sm-square rounded-circle"
+              href=""
+              ><i class="fab fa-youtube fw-normal"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== Hero-section ================= -->
+    <div class="container-fluid position-relative p-0">
+      <!-- main navbar -->
+
+      <nav
+        class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 p-lg-0"
+      >
+        <a href="" class="navbar-brand p-0">
+          <h1 class="text-primary m-0">
+            <i class="fa fa-map-marked-alt me-3"></i>Tourist
+          </h1>
+        </a>
+        <!-- menu button for responsive devices -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+        >
+          <span class="fa fa-bars"></span>
+        </button>
+
+        <!-- menu items -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="./about.html" class="nav-item nav-link">About</a>
+                <a href="#service" class="nav-item nav-link">Services</a>
+                <a href="./packag.html" class="nav-item nav-link">Packages</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="#destination" class="dropdown-item">Destination</a>
+                        <a href="#booking" class="dropdown-item">Booking</a>
+                        <a href="#team" class="dropdown-item">Travel Guides</a>
+                        <a href="#testimonial" class="dropdown-item">Testimonial</a>
+                    </div>
+                </div>
+                <a href="./contact.html" class="nav-item nav-link">Contact</a>
+            </div>
+            <div class="nav-item toggle-switch">
+            <input type="checkbox" id="theme-toggle" class="toggle-input" />
+            <label for="theme-toggle" class="toggle-label">
+              <span class="toggle-icon sun-icon">
+                <svg
+                  viewBox="0 0 16 16"
+                  class="bi bi-sun-fill"
+                  fill="currentColor"
+                  width="23"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"
+                  ></path>
+                </svg>
+              </span>
+              <span class="toggle-icon moon-icon">
+                <svg
+                  viewBox="0 0 16 16"
+                  class="bi bi-moon-stars-fill"
+                  fill="currentColor"
+                  width="23"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"
+                  ></path>
+                  <path
+                    d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"
+                  ></path>
+                </svg>
+              </span>
+            </label>
+          </div>
+          <a href="#booking" class="btn btn-primary rounded-pill py-2 px-4"
+            >Book Now</a
+          >
+        </div>
+      </nav>
+
+      <div class="container-fluid bg-primary py-5 mb-5 hero-header">
+        <div class="container py-5">
+          <div class="row justify-content-center py-5">
+            <div class="col-lg-10 pt-lg-5 m-lg-5 text-center">
+              <h1 class="display-3 text-white mb-3 animated slideInDown">
+                Explore our Packages
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+          <h6 class="section-title text-center text-primary px-3">Packages</h6>
+          <h1 class="mb-5">Awesome Packages</h1>
+        </div>
+        <div class="row g-4 justify-content-center">
+          <!-- First Row -->
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="package-item">
+              <div class="overflow-hidden">
+                <img src="./img/package-1.jpg" alt="" class="img-fluid" />
+              </div>
+              <div class="d-flex border-bottom">
+                <small class="flex-fill text-center border-end py-2">
+                  <i class="fa fa-map-marker-alt text-primary me-2"></i>
+                  Thailand
+                </small>
+                <small class="flex-fill text-center border-end py-2">
+                  <i class="fa fa-calendar-alt text-primary me-2"></i> 7 Days
+                </small>
+                <small class="flex-fill text-center border-end py-2">
+                  <i class="fa fa-user-alt text-primary me-2"></i> 2 Person
+                </small>
+              </div>
+
+              <div class="text-center p-4">
+                <h3 class="mb-0">₹14999.00</h3>
+                <div class="mb-3">
+                  <small class="fa fa-star text-primary"></small>
+                  <small class="fa fa-star text-primary"></small>
+                  <small class="fa fa-star text-primary"></small>
+                  <small class="fa fa-star text-primary"></small>
+                  <small class="fa fa-star text-primary"></small>
+                </div>
+                <p>
+                  Explore the vibrant culture and stunning landscapes of
+                  Thailand with this 3-day package. Enjoy guided tours, local
+                  cuisine, and unforgettable experiences that showcase the best
+                  of Thai culture and hospitality.
+                </p>
+                <div class="d-flex justify-content-center mb-3">
+                  <a
+                    href=""
+                    class="btn btn-sm btn-primary px-3"
+                    style="border-radius: 30px 0px 0px 30px"
+                    >Read More</a
+                  >
+                  <a
+                    href=""
+                    class="btn btn-sm btn-primary px-3"
+                    style="border-radius: 0 30px 30px 0"
+                    >Book Now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--second package-->
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="package-item">
+              <div class="overflow-hidden">
+                <img src="./img/destination-3.jpg" alt="" class="img-fluid" />
+              </div>
+              <div class="d-flex border-bottom">
+                <small class="flex-fill text-center border-end py-2">
+                  <i class="fa fa-map-marker-alt text-primary me-2"></i>
+                  Australia
+                </small>
+                <small class="flex-fill text-center border-end py-2">
+                  <i class="fa fa-calendar-alt text-primary me-2"></i> 8 Days
+                </small>
+                <small class="flex-fill text-center border-end py-2">
+                  <i class="fa fa-user-alt text-primary me-2"></i> 4 Person
+                </small>
+              </div>
+
+              <div class="text-center p-4">
+                <h3 class="mb-0">₹7949.00</h3>
+                <div class="mb-3">
+                  <small class="fa fa-star text-primary"></small>
+                  <small class="fa fa-star text-primary"></small>
+                  <small class="fa fa-star text-primary"></small>
+                  <small class="fa fa-star text-primary"></small>
+                  <small class="fa fa-star text-primary"></small>
+                </div>
+                <p>
+                  Experience the breathtaking landscapes and lively cities of
+                  Australia with this 8-day package. Enjoy guided tours, local
+                  cuisine, and memorable adventures that highlight the best of
+                  Australian culture and scenery.
+                </p>
+
+                <div class="d-flex justify-content-center mb-3">
+                  <a
+                    href=""
+                    class="btn btn-sm btn-primary px-3"
+                    style="border-radius: 30px 0px 0px 30px"
+                    >Read More</a
+                  >
+                  <a
+                    href=""
+                    class="btn btn-sm btn-primary px-3"
+                    style="border-radius: 0 30px 30px 0"
+                    >Book Now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Third package-->
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="package-item">
+              <div class="overflow-hidden">
+                <img src="./img/destination-2.jpg" alt="" class="img-fluid" />
+              </div>
+              <div class="d-flex border-bottom">
+                <small class="flex-fill text-center border-end py-2">
+                  <i class="fa fa-map-marker-alt text-primary me-2"></i>
+                  Malaysia
+                </small>
+                <small class="flex-fill text-center border-end py-2">
+                  <i class="fa fa-calendar-alt text-primary me-2"></i> 3 Days
+                </small>
+                <small class="flex-fill text-center border-end py-2">
+                  <i class="fa fa-user-alt text-primary me-2"></i> 2 Person
+                </small>
+              </div>
+
+              <div class="text-center p-4">
+                <h3 class="mb-0">$149.00</h3>
+                <div class="mb-3">
+                  <small class="fa fa-star text-primary"></small>
+                  <small class="fa fa-star text-primary"></small>
+                  <small class="fa fa-star text-primary"></small>
+                  <small class="fa fa-star text-primary"></small>
+                  <small class="fa fa-star text-primary"></small>
+                </div>
+                <p>
+                  Explore the vibrant cities and lush landscapes of Malaysia
+                  with this 3-day package. Enjoy guided tours, taste local
+                  delicacies, and experience the diverse culture and warm
+                  hospitality that Malaysia has to offer.
+                </p>
+
+                <div class="d-flex justify-content-center mb-3">
+                  <a
+                    href=""
+                    class="btn btn-sm btn-primary px-3"
+                    style="border-radius: 30px 0px 0px 30px"
+                    >Read More</a
+                  >
+                  <a
+                    href=""
+                    class="btn btn-sm btn-primary px-3"
+                    style="border-radius: 0 30px 30px 0"
+                    >Book Now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Second Row -->
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+            <div class="package-item">
+              <div class="overflow-hidden">
+                <img src="./img/package4.jpg" alt="" class="img-fluid" />
+              </div>
+              <div class="d-flex border-bottom">
+                <small class="flex-fill text-center border-end py-2">
+                  <i class="fa fa-map-marker-alt text-primary me-2"></i> Japan
+                </small>
+                <small class="flex-fill text-center border-end py-2">
+                  <i class="fa fa-calendar-alt text-primary me-2"></i> 5 Days
+                </small>
+                <small class="flex-fill text-center border-end py-2">
+                  <i class="fa fa-user-alt text-primary me-2"></i> 3 Person
+                </small>
+              </div>
+
+              <div class="text-center p-4">
+                <h3 class="mb-0">$299.00</h3>
+                <div class="mb-3">
+                  <small class="fa fa-star text-primary"></small>
+                  <small class="fa fa-star text-primary"></small>
+                  <small class="fa fa-star text-primary"></small>
+                  <small class="fa fa-star text-primary"></small>
+                  <small class="fa fa-star text-primary"></small>
+                </div>
+                <p>
+                  Explore the rich history and modern marvels of Japan with this
+                  5-day package. Visit ancient temples, enjoy the vibrant city
+                  life, and savor traditional Japanese cuisine on this
+                  unforgettable journey.
+                </p>
+                <div class="d-flex justify-content-center mb-3">
+                  <a
+                    href=""
+                    class="btn btn-sm btn-primary px-3"
+                    style="border-radius: 30px 0px 0px 30px"
+                    >Read More</a
+                  >
+                  <a
+                    href=""
+                    class="btn btn-sm btn-primary px-3"
+                    style="border-radius: 0 30px 30px 0"
+                    >Book Now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Fourth package-->
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.9s">
+            <div class="package-item">
+              <div class="overflow-hidden">
+                <img src="./img/package5.jpg" alt="" class="img-fluid" />
+              </div>
+              <div class="d-flex border-bottom">
+                <small class="flex-fill text-center border-end py-2">
+                  <i class="fa fa-map-marker-alt text-primary me-2"></i> Spain
+                </small>
+                <small class="flex-fill text-center border-end py-2">
+                  <i class="fa fa-calendar-alt text-primary me-2"></i> 7 Days
+                </small>
+                <small class="flex-fill text-center border-end py-2">
+                  <i class="fa fa-user-alt text-primary me-2"></i> 4 Person
+                </small>
+              </div>
+
+              <div class="text-center p-4">
+                <h3 class="mb-0">$399.00</h3>
+                <div class="mb-3">
+                  <small class="fa fa-star text-primary"></small>
+                  <small class="fa fa-star text-primary"></small>
+                  <small class="fa fa-star text-primary"></small>
+                  <small class="fa fa-star text-primary"></small>
+                  <small class="fa fa-star text-primary"></small>
+                </div>
+                <p>
+                  Experience the vibrant culture and diverse landscapes of Spain
+                  with this 7-day tour. From historic cities to beautiful
+                  beaches, this package offers a comprehensive exploration of
+                  Spain’s most iconic destinations.
+                </p>
+                <div class="d-flex justify-content-center mb-3">
+                  <a
+                    href=""
+                    class="btn btn-sm btn-primary px-3"
+                    style="border-radius: 30px 0px 0px 30px"
+                    >Read More</a
+                  >
+                  <a
+                    href=""
+                    class="btn btn-sm btn-primary px-3"
+                    style="border-radius: 0 30px 30px 0"
+                    >Book Now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Fifth package-->
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="1.1s">
+            <div class="package-item">
+              <div class="overflow-hidden">
+                <img src="./img/package6.jpg" alt="" class="img-fluid" />
+              </div>
+              <div class="d-flex border-bottom">
+                <small class="flex-fill text-center border-end py-2">
+                  <i class="fa fa-map-marker-alt text-primary me-2"></i> Italy
+                </small>
+                <small class="flex-fill text-center border-end py-2">
+                  <i class="fa fa-calendar-alt text-primary me-2"></i> 6 Days
+                </small>
+                <small class="flex-fill text-center border-end py-2">
+                  <i class="fa fa-user-alt text-primary me-2"></i> 3 Person
+                </small>
+              </div>
+
+              <div class="text-center p-4">
+                <h3 class="mb-0">$299.00</h3>
+                <div class="mb-3">
+                  <small class="fa fa-star text-primary"></small>
+                  <small class="fa fa-star text-primary"></small>
+                  <small class="fa fa-star text-primary"></small>
+                  <small class="fa fa-star text-primary"></small>
+                  <small class="fa fa-star text-primary"></small>
+                </div>
+                <p>
+                  Indulge in the rich history and stunning landscapes of Italy
+                  with this 6-day package. From exploring ancient ruins to
+                  savoring world-famous cuisine, this tour provides a deep dive
+                  into Italy’s cultural treasures.
+                </p>
+                <div class="d-flex justify-content-center mb-3">
+                  <a
+                    href=""
+                    class="btn btn-sm btn-primary px-3"
+                    style="border-radius: 30px 0px 0px 30px"
+                    >Read More</a
+                  >
+                  <a
+                    href=""
+                    class="btn btn-sm btn-primary px-3"
+                    style="border-radius: 0 30px 30px 0"
+                    >Book Now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Second Row -->
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+            <div class="package-item">
+              <div class="overflow-hidden">
+                <img src="./img/package4.jpg" alt="" class="img-fluid" />
+              </div>
+              <div class="d-flex border-bottom">
+                <small class="flex-fill text-center border-end py-2">
+                  <i class="fa fa-map-marker-alt text-primary me-2"></i> Japan
+                </small>
+                <small class="flex-fill text-center border-end py-2">
+                  <i class="fa fa-calendar-alt text-primary me-2"></i> 5 Days
+                </small>
+                <small class="flex-fill text-center border-end py-2">
+                  <i class="fa fa-user-alt text-primary me-2"></i> 3 Person
+                </small>
+              </div>
+
+              <div class="text-center p-4">
+                <h3 class="mb-0">$299.00</h3>
+                <div class="mb-3">
+                  <small class="fa fa-star text-primary"></small>
+                  <small class="fa fa-star text-primary"></small>
+                  <small class="fa fa-star text-primary"></small>
+                  <small class="fa fa-star text-primary"></small>
+                  <small class="fa fa-star text-primary"></small>
+                </div>
+                <p>
+                  Explore the rich history and modern marvels of Japan with this
+                  5-day package. Visit ancient temples, enjoy the vibrant city
+                  life, and savor traditional Japanese cuisine on this
+                  unforgettable journey.
+                </p>
+                <div class="d-flex justify-content-center mb-3">
+                  <a
+                    href=""
+                    class="btn btn-sm btn-primary px-3"
+                    style="border-radius: 30px 0px 0px 30px"
+                    >Read More</a
+                  >
+                  <a
+                    href=""
+                    class="btn btn-sm btn-primary px-3"
+                    style="border-radius: 0 30px 30px 0"
+                    >Book Now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Fourth package-->
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.9s">
+            <div class="package-item">
+              <div class="overflow-hidden">
+                <img src="./img/package5.jpg" alt="" class="img-fluid" />
+              </div>
+              <div class="d-flex border-bottom">
+                <small class="flex-fill text-center border-end py-2">
+                  <i class="fa fa-map-marker-alt text-primary me-2"></i> Spain
+                </small>
+                <small class="flex-fill text-center border-end py-2">
+                  <i class="fa fa-calendar-alt text-primary me-2"></i> 7 Days
+                </small>
+                <small class="flex-fill text-center border-end py-2">
+                  <i class="fa fa-user-alt text-primary me-2"></i> 4 Person
+                </small>
+              </div>
+
+              <div class="text-center p-4">
+                <h3 class="mb-0">$399.00</h3>
+                <div class="mb-3">
+                  <small class="fa fa-star text-primary"></small>
+                  <small class="fa fa-star text-primary"></small>
+                  <small class="fa fa-star text-primary"></small>
+                  <small class="fa fa-star text-primary"></small>
+                  <small class="fa fa-star text-primary"></small>
+                </div>
+                <p>
+                  Experience the vibrant culture and diverse landscapes of Spain
+                  with this 7-day tour. From historic cities to beautiful
+                  beaches, this package offers a comprehensive exploration of
+                  Spain’s most iconic destinations.
+                </p>
+                <div class="d-flex justify-content-center mb-3">
+                  <a
+                    href=""
+                    class="btn btn-sm btn-primary px-3"
+                    style="border-radius: 30px 0px 0px 30px"
+                    >Read More</a
+                  >
+                  <a
+                    href=""
+                    class="btn btn-sm btn-primary px-3"
+                    style="border-radius: 0 30px 30px 0"
+                    >Book Now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Fifth package-->
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="1.1s">
+            <div class="package-item">
+              <div class="overflow-hidden">
+                <img src="./img/package6.jpg" alt="" class="img-fluid" />
+              </div>
+              <div class="d-flex border-bottom">
+                <small class="flex-fill text-center border-end py-2">
+                  <i class="fa fa-map-marker-alt text-primary me-2"></i> Italy
+                </small>
+                <small class="flex-fill text-center border-end py-2">
+                  <i class="fa fa-calendar-alt text-primary me-2"></i> 6 Days
+                </small>
+                <small class="flex-fill text-center border-end py-2">
+                  <i class="fa fa-user-alt text-primary me-2"></i> 3 Person
+                </small>
+              </div>
+
+              <div class="text-center p-4">
+                <h3 class="mb-0">$299.00</h3>
+                <div class="mb-3">
+                  <small class="fa fa-star text-primary"></small>
+                  <small class="fa fa-star text-primary"></small>
+                  <small class="fa fa-star text-primary"></small>
+                  <small class="fa fa-star text-primary"></small>
+                  <small class="fa fa-star text-primary"></small>
+                </div>
+                <p>
+                  Indulge in the rich history and stunning landscapes of Italy
+                  with this 6-day package. From exploring ancient ruins to
+                  savoring world-famous cuisine, this tour provides a deep dive
+                  into Italy’s cultural treasures.
+                </p>
+                <div class="d-flex justify-content-center mb-3">
+                  <a
+                    href=""
+                    class="btn btn-sm btn-primary px-3"
+                    style="border-radius: 30px 0px 0px 30px"
+                    >Read More</a
+                  >
+                  <a
+                    href=""
+                    class="btn btn-sm btn-primary px-3"
+                    style="border-radius: 0 30px 30px 0"
+                    >Book Now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- start -->
+         <!-- Second Row -->
+         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+            <div class="package-item">
+              <div class="overflow-hidden">
+                <img src="./img/package4.jpg" alt="" class="img-fluid" />
+              </div>
+              <div class="d-flex border-bottom">
+                <small class="flex-fill text-center border-end py-2">
+                  <i class="fa fa-map-marker-alt text-primary me-2"></i> Japan
+                </small>
+                <small class="flex-fill text-center border-end py-2">
+                  <i class="fa fa-calendar-alt text-primary me-2"></i> 5 Days
+                </small>
+                <small class="flex-fill text-center border-end py-2">
+                  <i class="fa fa-user-alt text-primary me-2"></i> 3 Person
+                </small>
+              </div>
+
+              <div class="text-center p-4">
+                <h3 class="mb-0">$299.00</h3>
+                <div class="mb-3">
+                  <small class="fa fa-star text-primary"></small>
+                  <small class="fa fa-star text-primary"></small>
+                  <small class="fa fa-star text-primary"></small>
+                  <small class="fa fa-star text-primary"></small>
+                  <small class="fa fa-star text-primary"></small>
+                </div>
+                <p>
+                  Explore the rich history and modern marvels of Japan with this
+                  5-day package. Visit ancient temples, enjoy the vibrant city
+                  life, and savor traditional Japanese cuisine on this
+                  unforgettable journey.
+                </p>
+                <div class="d-flex justify-content-center mb-3">
+                  <a
+                    href=""
+                    class="btn btn-sm btn-primary px-3"
+                    style="border-radius: 30px 0px 0px 30px"
+                    >Read More</a
+                  >
+                  <a
+                    href=""
+                    class="btn btn-sm btn-primary px-3"
+                    style="border-radius: 0 30px 30px 0"
+                    >Book Now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Fourth package-->
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.9s">
+            <div class="package-item">
+              <div class="overflow-hidden">
+                <img src="./img/package5.jpg" alt="" class="img-fluid" />
+              </div>
+              <div class="d-flex border-bottom">
+                <small class="flex-fill text-center border-end py-2">
+                  <i class="fa fa-map-marker-alt text-primary me-2"></i> Spain
+                </small>
+                <small class="flex-fill text-center border-end py-2">
+                  <i class="fa fa-calendar-alt text-primary me-2"></i> 7 Days
+                </small>
+                <small class="flex-fill text-center border-end py-2">
+                  <i class="fa fa-user-alt text-primary me-2"></i> 4 Person
+                </small>
+              </div>
+
+              <div class="text-center p-4">
+                <h3 class="mb-0">$399.00</h3>
+                <div class="mb-3">
+                  <small class="fa fa-star text-primary"></small>
+                  <small class="fa fa-star text-primary"></small>
+                  <small class="fa fa-star text-primary"></small>
+                  <small class="fa fa-star text-primary"></small>
+                  <small class="fa fa-star text-primary"></small>
+                </div>
+                <p>
+                  Experience the vibrant culture and diverse landscapes of Spain
+                  with this 7-day tour. From historic cities to beautiful
+                  beaches, this package offers a comprehensive exploration of
+                  Spain’s most iconic destinations.
+                </p>
+                <div class="d-flex justify-content-center mb-3">
+                  <a
+                    href=""
+                    class="btn btn-sm btn-primary px-3"
+                    style="border-radius: 30px 0px 0px 30px"
+                    >Read More</a
+                  >
+                  <a
+                    href=""
+                    class="btn btn-sm btn-primary px-3"
+                    style="border-radius: 0 30px 30px 0"
+                    >Book Now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Fifth package-->
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="1.1s">
+            <div class="package-item">
+              <div class="overflow-hidden">
+                <img src="./img/package6.jpg" alt="" class="img-fluid" />
+              </div>
+              <div class="d-flex border-bottom">
+                <small class="flex-fill text-center border-end py-2">
+                  <i class="fa fa-map-marker-alt text-primary me-2"></i> Italy
+                </small>
+                <small class="flex-fill text-center border-end py-2">
+                  <i class="fa fa-calendar-alt text-primary me-2"></i> 6 Days
+                </small>
+                <small class="flex-fill text-center border-end py-2">
+                  <i class="fa fa-user-alt text-primary me-2"></i> 3 Person
+                </small>
+              </div>
+
+              <div class="text-center p-4">
+                <h3 class="mb-0">$299.00</h3>
+                <div class="mb-3">
+                  <small class="fa fa-star text-primary"></small>
+                  <small class="fa fa-star text-primary"></small>
+                  <small class="fa fa-star text-primary"></small>
+                  <small class="fa fa-star text-primary"></small>
+                  <small class="fa fa-star text-primary"></small>
+                </div>
+                <p>
+                  Indulge in the rich history and stunning landscapes of Italy
+                  with this 6-day package. From exploring ancient ruins to
+                  savoring world-famous cuisine, this tour provides a deep dive
+                  into Italy’s cultural treasures.
+                </p>
+                <div class="d-flex justify-content-center mb-3">
+                  <a
+                    href=""
+                    class="btn btn-sm btn-primary px-3"
+                    style="border-radius: 30px 0px 0px 30px"
+                    >Read More</a
+                  >
+                  <a
+                    href=""
+                    class="btn btn-sm btn-primary px-3"
+                    style="border-radius: 0 30px 30px 0"
+                    >Book Now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+         <!-- end -->
+        </div>
+        
+        </div>
+        
+      </div>
+      
+      <!-- this is end of packages -->
+    </div>
+
+    <!--=========================== Footer Section=======================-->
+    <div
+      class="container-fluid wow fadeIn bg-dark text-light footer pt-5 mt-5"
+      data-wow-delay="0.1s"
+    >
+      <div class="container py-5">
+        <div class="row g-5">
+          <div class="col-lg-3 col-md-6">
+            <h4 class="text-white mb-3">Company</h4>
+            <a href="" class="btn btn-link">About Us</a>
+            <a href="" class="btn btn-link">Contact Us</a>
+            <a href="" class="btn btn-link">Privacy Policy</a>
+            <a href="" class="btn btn-link">Terms & Condition</a>
+            <a href="" class="btn btn-link">FAQ & Help</a>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h4 class="text-white mb-3">Contact</h4>
+            <p class="mb-2">
+              <i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA
+            </p>
+            <p class="mb-2">
+              <i class="fa fa-phone-alt me-3"></i>+91 9726461940
+            </p>
+            <p class="mb-2">
+              <i class="fa fa-envelope me-3"></i>info@example.com
+            </p>
+
+            <!--Social icon-->
+            <div class="d-flex pt-2">
+              <a href="" class="btn btn-outline-light btn-social">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="" class="btn btn-outline-light btn-social">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="" class="btn btn-outline-light btn-social">
+                <i class="fab fa-youtube"></i>
+              </a>
+              <a href="" class="btn btn-outline-light btn-social">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h4 class="text-white mb-3">Gallery</h4>
+
+            <div class="row g-2 pt-2">
+              <div class="col-4">
+                <img
+                  src="./img/package-1.jpg"
+                  alt=""
+                  class="img-fluid bg-light p-1"
+                />
+              </div>
+              <div class="col-4">
+                <img
+                  src="./img/package-2.jpg"
+                  alt=""
+                  class="img-fluid bg-light p-1"
+                />
+              </div>
+              <div class="col-4">
+                <img
+                  src="./img/package-3.jpg"
+                  alt=""
+                  class="img-fluid bg-light p-1"
+                />
+              </div>
+              <div class="col-4">
+                <img
+                  src="./img/package-1.jpg"
+                  alt=""
+                  class="img-fluid bg-light p-1"
+                />
+              </div>
+              <div class="col-4">
+                <img
+                  src="./img/package-2.jpg"
+                  alt=""
+                  class="img-fluid bg-light p-1"
+                />
+              </div>
+              <div class="col-4">
+                <img
+                  src="./img/package-3.jpg"
+                  alt=""
+                  class="img-fluid bg-light p-1"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h4 class="text-white mb-3">Newsletter</h4>
+            <p>
+              Subscribe to our newsletter for the latest updates and exclusive
+              offers. Stay in the loop with our travel tips and news!
+            </p>
+
+            <div class="position-relative mx-auto" style="max-width: 400px">
+              <input
+                type="text"
+                class="form-control border-primary w-100 py-3 ps-4 pe-5"
+                placeholder="Your Email"
+              />
+              <button
+                type="button"
+                class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"
+              >
+                SignUp
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- copyright -->
+      <div class="container">
+        <div class="copyright">
+          <div class="row">
+            <div class="col-md-6 text-center text-md-start mb-md-0">
+              &copy; <a href="" class="border-bottom">Mastery Code</a> | All
+              Right Reserved.
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+              <div class="footer-menu">
+                <a href="" class="">Home</a>
+                <a href="" class="">Cookies</a>
+                <a href="" class="">Help</a>
+                <a href="" class="">FAQs</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Back to Top -->
+    <a
+      href="#"
+      class="btn btn-lg btn-primary btn-lg-square back-to-top text-align-center"
+      style="border-radius: 50%"
+      ><i class="bi bi-arrow-up"></i
+    ></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.5/dist/JsBarcode.all.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

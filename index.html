@@ -1,1466 +1,1903 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>Tourist - Travel Agency HTML Template</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
 
     <!-- Favicon -->
-    <link rel="icon" href="./img/icon.png" sizes="48x48" type="image/png">
+    <link rel="icon" href="./img/icon.png" sizes="48x48" type="image/png" />
 
     <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
 
     <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link
+      href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css"
+      rel="stylesheet"
+    />
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
 
     <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" />
     <script src="https://js.stripe.com/v3/"></script>
+  </head>
 
-</head>
-
-<body>
-
-
+  <body>
     <!--############### Top NavBar #################-->
     <div class="container-fluid bg-dark px-5 d-none d-lg-block">
-        <div class="row gx-0">
-            <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
-                <div class="d-inline-flex align-item-center" style="height:45px">
-                    <small class="me-3 text-light"><i class="fa fa-map-marked-alt me-2"></i>123 Street, New York,
-                        USA</small>
-                    <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i>+91 9726461940</small>
-                    <small class="me-3 text-light"><i class="fa fa-envelop-open me-2"></i>info@example</small>
-                </div>
-            </div>
-            <!-- social button -->
-            <div class="col-lg-4 text-center text-lg-end">
-                <div class="d-inline-flex align-items-center" style="height: 45px;">
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i
-                            class="fab fa-twitter fw-normal"></i></a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i
-                            class="fab fa-facebook-f fw-normal"></i></a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i
-                            class="fab fa-linkedin-in fw-normal"></i></a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i
-                            class="fab fa-instagram fw-normal"></i></a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href=""><i
-                            class="fab fa-youtube fw-normal"></i></a>
-                </div>
-            </div>
+      <div class="row gx-0">
+        <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+          <div class="d-inline-flex align-item-center" style="height: 45px">
+            <small class="me-3 text-light"
+              ><i class="fa fa-map-marked-alt me-2"></i>123 Street, New York,
+              USA</small
+            >
+            <small class="me-3 text-light"
+              ><i class="fa fa-phone-alt me-2"></i>+91 9726461940</small
+            >
+            <small class="me-3 text-light"
+              ><i class="fa fa-envelop-open me-2"></i>info@example</small
+            >
+          </div>
         </div>
+        <!-- social button -->
+        <div class="col-lg-4 text-center text-lg-end">
+          <div class="d-inline-flex align-items-center" style="height: 45px">
+            <a
+              class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2"
+              href=""
+              ><i class="fab fa-twitter fw-normal"></i
+            ></a>
+            <a
+              class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2"
+              href=""
+              ><i class="fab fa-facebook-f fw-normal"></i
+            ></a>
+            <a
+              class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2"
+              href=""
+              ><i class="fab fa-linkedin-in fw-normal"></i
+            ></a>
+            <a
+              class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2"
+              href=""
+              ><i class="fab fa-instagram fw-normal"></i
+            ></a>
+            <a
+              class="btn btn-sm btn-outline-light btn-sm-square rounded-circle"
+              href=""
+              ><i class="fab fa-youtube fw-normal"></i
+            ></a>
+          </div>
+        </div>
+      </div>
     </div>
-
-
 
     <!-- ==================== Hero-section ================= -->
     <div class="container-fluid position-relative p-0">
-        <!-- main navbar -->
+      <!-- main navbar -->
 
-        <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 p-lg-0">
-            <a href="" class="navbar-brand p-0">
-                <h1 class="text-primary m-0"><i class="fa fa-map-marked-alt me-3"></i>Tourist</h1>
-            </a>
-            <!-- menu button for responsive devices -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span class="fa fa-bars"></span>
-            </button>
+      <nav
+        class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 p-lg-0"
+      >
+        <a href="" class="navbar-brand p-0">
+          <h1 class="text-primary m-0">
+            <i class="fa fa-map-marked-alt me-3"></i>Tourist
+          </h1>
+        </a>
+        <!-- menu button for responsive devices -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+        >
+          <span class="fa fa-bars"></span>
+        </button>
 
-
-            <!-- menu items -->
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav ms-auto py-0">
-
-                    <a href="index.html" class="nav-item nav-link active">Home</a>
-                    <a href="#about" class="nav-item nav-link">About</a>
-                    <a href="#service" class="nav-item nav-link">Services</a>
-                    <a href="#Packages" class="nav-item nav-link">Packages</a>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                        <div class="dropdown-menu m-0">
-                            <a href="#destination" class="dropdown-item">Destination</a>
-                            <a href="#booking" class="dropdown-item">Booking</a>
-                            <a href="#team" class="dropdown-item">Travel Guides</a>
-                            <a href="#testimonial" class="dropdown-item">Testimonial</a>
-                        </div>
-                    </div>
-                    <a href="#contact" class="nav-item nav-link">Contact</a>
-                </div>
-                <div class="nav-item toggle-switch">
-                    <input type="checkbox" id="theme-toggle" class="toggle-input">
-                    <label for="theme-toggle" class="toggle-label">
-                        <span class="toggle-icon sun-icon">
-                            <svg viewBox="0 0 16 16" class="bi bi-sun-fill" fill="currentColor" width="23"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z">
-                                </path>
-                            </svg>
-                        </span>
-                        <span class="toggle-icon moon-icon">
-                            <svg viewBox="0 0 16 16" class="bi bi-moon-stars-fill" fill="currentColor" width="23"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z">
-                                </path>
-                                <path
-                                    d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z">
-                                </path>
-                            </svg>
-                        </span>
-                    </label>
-                </div>
-                <a href="#booking" class="btn btn-primary rounded-pill py-2 px-4">Book Now</a>
+        <!-- menu items -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav ms-auto py-0">
+            <a href="index.html" class="nav-item nav-link active">Home</a>
+            <a href="#about" class="nav-item nav-link">About</a>
+            <a href="#service" class="nav-item nav-link">Services</a>
+            <a href="#Packages" class="nav-item nav-link">Packages</a>
+            <div class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                >Pages</a
+              >
+              <div class="dropdown-menu m-0">
+                <a href="#destination" class="dropdown-item">Destination</a>
+                <a href="#booking" class="dropdown-item">Booking</a>
+                <a href="#team" class="dropdown-item">Travel Guides</a>
+                <a href="#testimonial" class="dropdown-item">Testimonial</a>
+              </div>
             </div>
-
-
-        </nav>
-
-        <div class="container-fluid bg-primary py-5 mb-5 hero-header">
-            <div class="container py-5">
-                <div class="row justify-content-center py-5">
-                    <div class="col-lg-10 pt-lg-5 m-lg-5 text-center">
-                        <h1 class="display-3 text-white mb-3 animated slideInDown">Enjoy Your Vacation With Us</h1>
-                        <p class="fs-4 text-white mb-4 animated slideInDown">Create lasting memories with our tailored
-                            vacation experiences.
-                            <br> Relax and enjoy!
-                        </p>
-
-                        <div class="position-relative w-75 mx-auto animated slideInDown">
-                            <!-- input box -->
-                            <input type="text" class="form-control border-0 rounded-pill w-100 py-3 ps-4 pe-5"
-                                placeholder="eg. INDIA">
-                            <!-- button -->
-                            <button type="button"
-                                class="btn btn-primary rounded-pill py-2 px-4 position-absolute top-0 end-0 me-2"
-                                style="margin-top:7px">Search</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <a href="./contact.html" class="nav-item nav-link">Contact</a>
+          </div>
+          <div class="nav-item toggle-switch">
+            <input type="checkbox" id="theme-toggle" class="toggle-input" />
+            <label for="theme-toggle" class="toggle-label">
+              <span class="toggle-icon sun-icon">
+                <svg
+                  viewBox="0 0 16 16"
+                  class="bi bi-sun-fill"
+                  fill="currentColor"
+                  width="23"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"
+                  ></path>
+                </svg>
+              </span>
+              <span class="toggle-icon moon-icon">
+                <svg
+                  viewBox="0 0 16 16"
+                  class="bi bi-moon-stars-fill"
+                  fill="currentColor"
+                  width="23"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"
+                  ></path>
+                  <path
+                    d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"
+                  ></path>
+                </svg>
+              </span>
+            </label>
+          </div>
+          <a href="#booking" class="btn btn-primary rounded-pill py-2 px-4"
+            >Book Now</a
+          >
         </div>
-    </div>
+      </nav>
 
+      <div class="container-fluid bg-primary py-5 mb-5 hero-header">
+        <div class="container py-5">
+          <div class="row justify-content-center py-5">
+            <div class="col-lg-10 pt-lg-5 m-lg-5 text-center">
+              <h1 class="display-3 text-white mb-3 animated slideInDown">
+                Enjoy Your Vacation With Us
+              </h1>
+              <p class="fs-4 text-white mb-4 animated slideInDown">
+                Create lasting memories with our tailored vacation experiences.
+                <br />
+                Relax and enjoy!
+              </p>
+
+              <div class="position-relative w-75 mx-auto animated slideInDown">
+                <!-- input box -->
+                <input
+                  type="text"
+                  class="form-control border-0 rounded-pill w-100 py-3 ps-4 pe-5"
+                  placeholder="eg. INDIA"
+                />
+                <!-- button -->
+                <button
+                  type="button"
+                  class="btn btn-primary rounded-pill py-2 px-4 position-absolute top-0 end-0 me-2"
+                  style="margin-top: 7px"
+                >
+                  Search
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- ===================== About Section ===================== -->
     <section class="about py-5" id="about">
-        <div class="container-fluid py-5">
-            <div class="container">
-                <div class="row g-5">
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height:400px;">
-                        <div class="position-relative h-100">
-                            <img src="./img/about.jpg" alt="" style="object-fit:cover;"
-                                class="img-fluid position-absolute w-100 h-100">
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <h6 class="section-title text-primary text-start pe-3">About Us</h6>
-                        <h1 class="mb-4">Welcome To <span class="text-primary">Tourist</span></h1>
-                        <p class="mb-4">At Tourist, we strive to provide you with an unforgettable travel experience.
-                            Our dedicated team of travel experts ensures that every aspect of your trip is meticulously
-                            planned and executed. From luxurious accommodations to personalized itineraries, we are
-                            committed to making your journey exceptional.</p>
-                        <p class="mb-4">Our mission is to offer seamless travel solutions tailored to your preferences.
-                            Whether you are seeking a relaxing beach getaway or an adventurous exploration, our diverse
-                            range of services and handpicked destinations guarantee a memorable vacation. Trust us to
-                            handle the details while you focus on enjoying your time away.</p>
-                        <div class="row gy-2 gx-4 mb-4">
-                            <div class="col-sm-6">
-                                <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>First Class Flights
-                                </p>
-                            </div>
-                            <div class="col-sm-6">
-                                <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Handpicked Hotels</p>
-                            </div>
-                            <div class="col-sm-6">
-                                <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>5 Star Accommodations
-                                </p>
-                            </div>
-                            <div class="col-sm-6">
-                                <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Latest Model Vehicles
-                                </p>
-                            </div>
-                            <div class="col-sm-6">
-                                <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>150 Premium City
-                                    Tours</p>
-                            </div>
-                            <div class="col-sm-6">
-                                <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>24/7 Service</p>
-                            </div>
-                        </div>
-                        <!-- button -->
-                        <div class="btn btn-primary py-3 px-5 mt-2">Read More</div>
-                    </div>
-                </div>
+      <div class="container-fluid py-5">
+        <div class="container">
+          <div class="row g-5">
+            <div
+              class="col-lg-6 wow fadeInUp"
+              data-wow-delay="0.1s"
+              style="min-height: 400px"
+            >
+              <div class="position-relative h-100">
+                <img
+                  src="./img/about.jpg"
+                  alt=""
+                  style="object-fit: cover"
+                  class="img-fluid position-absolute w-100 h-100"
+                />
+              </div>
             </div>
+
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+              <h6 class="section-title text-primary text-start pe-3">
+                About Us
+              </h6>
+              <h1 class="mb-4">
+                Welcome To <span class="text-primary">Tourist</span>
+              </h1>
+              <p class="mb-4">
+                At Tourist, we strive to provide you with an unforgettable
+                travel experience. Our dedicated team of travel experts ensures
+                that every aspect of your trip is meticulously planned and
+                executed. From luxurious accommodations to personalized
+                itineraries, we are committed to making your journey
+                exceptional.
+              </p>
+              <p class="mb-4">
+                Our mission is to offer seamless travel solutions tailored to
+                your preferences. Whether you are seeking a relaxing beach
+                getaway or an adventurous exploration, our diverse range of
+                services and handpicked destinations guarantee a memorable
+                vacation. Trust us to handle the details while you focus on
+                enjoying your time away.
+              </p>
+              <div class="row gy-2 gx-4 mb-4">
+                <div class="col-sm-6">
+                  <p class="mb-0">
+                    <i class="fa fa-arrow-right text-primary me-2"></i>First
+                    Class Flights
+                  </p>
+                </div>
+                <div class="col-sm-6">
+                  <p class="mb-0">
+                    <i class="fa fa-arrow-right text-primary me-2"></i
+                    >Handpicked Hotels
+                  </p>
+                </div>
+                <div class="col-sm-6">
+                  <p class="mb-0">
+                    <i class="fa fa-arrow-right text-primary me-2"></i>5 Star
+                    Accommodations
+                  </p>
+                </div>
+                <div class="col-sm-6">
+                  <p class="mb-0">
+                    <i class="fa fa-arrow-right text-primary me-2"></i>Latest
+                    Model Vehicles
+                  </p>
+                </div>
+                <div class="col-sm-6">
+                  <p class="mb-0">
+                    <i class="fa fa-arrow-right text-primary me-2"></i>150
+                    Premium City Tours
+                  </p>
+                </div>
+                <div class="col-sm-6">
+                  <p class="mb-0">
+                    <i class="fa fa-arrow-right text-primary me-2"></i>24/7
+                    Service
+                  </p>
+                </div>
+              </div>
+              <!-- button -->
+              <div class="btn btn-primary py-3 px-5 mt-2"><a class="text-white" href="./about.html">Read More</a></div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!--================= Service Section ================-->
     <section class="service section-padding" id="service">
-        <div class="container-xxl py-5">
-            <div class="container">
-                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                    <h6 class="section-title text-center text-primary px-3">Services</h6>
-                    <h1 class="mb-5">Our Services</h1>
+      <div class="container-xxl py-5">
+        <div class="container">
+          <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h6 class="section-title text-center text-primary px-3">
+              Services
+            </h6>
+            <h1 class="mb-5">Our Services</h1>
+          </div>
+          <div class="row g-4">
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="service-item rounded pt-3">
+                <div class="p-4">
+                  <i class="fa fa-3x fa-globe text-primary mb-4"></i>
+                  <h5>WorldWide Tours</h5>
+                  <p>
+                    Discover amazing destinations with our global tours designed
+                    to meet your travel dreams.
+                  </p>
                 </div>
-                <div class="row g-4">
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="service-item rounded pt-3">
-                            <div class="p-4">
-                                <i class="fa fa-3x fa-globe text-primary mb-4"></i>
-                                <h5>WorldWide Tours</h5>
-                                <p>Discover amazing destinations with our global tours designed to meet your travel
-                                    dreams.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="service-item rounded pt-3">
-                            <div class="p-4">
-                                <i class="fa fa-3x fa-hotel text-primary mb-4"></i>
-                                <h5>Hotel Reservation</h5>
-                                <p>Book your stay with ease from our curated list of hotels and accommodations.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="service-item rounded pt-3">
-                            <div class="p-4">
-                                <i class="fa fa-3x fa-user text-primary mb-4"></i>
-                                <h5>Travel Guides</h5>
-                                <p>Get personalized tips and advice from our expert travel guides to enhance your
-                                    journey.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
-                        <div class="service-item rounded pt-3">
-                            <div class="p-4">
-                                <i class="fa fa-3x fa-cog text-primary mb-4"></i>
-                                <h5>Event Management</h5>
-                                <p>Let us handle your event planning and execution for a flawless and memorable
-                                    experience.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="service-item rounded pt-3">
-                            <div class="p-4">
-                                <i class="fa fa-3x fa-globe text-primary mb-4"></i>
-                                <h5>WorldWide Tours</h5>
-                                <p>Explore the world with our tailored tours that cater to all your travel desires.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="service-item rounded pt-3">
-                            <div class="p-4">
-                                <i class="fa fa-3x fa-hotel text-primary mb-4"></i>
-                                <h5>Hotel Reservation</h5>
-                                <p>Find and book the perfect hotel for your stay with our easy reservation service.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="service-item rounded pt-3">
-                            <div class="p-4">
-                                <i class="fa fa-3x fa-user text-primary mb-4"></i>
-                                <h5>Travel Guides</h5>
-                                <p>Our travel guides provide valuable insights and recommendations for a great trip.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
-                        <div class="service-item rounded pt-3">
-                            <div class="p-4">
-                                <i class="fa fa-3x fa-cog text-primary mb-4"></i>
-                                <h5>Event Management</h5>
-                                <p>Experience smooth and professional event management for all your special occasions.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+              <div class="service-item rounded pt-3">
+                <div class="p-4">
+                  <i class="fa fa-3x fa-hotel text-primary mb-4"></i>
+                  <h5>Hotel Reservation</h5>
+                  <p>
+                    Book your stay with ease from our curated list of hotels and
+                    accommodations.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+              <div class="service-item rounded pt-3">
+                <div class="p-4">
+                  <i class="fa fa-3x fa-user text-primary mb-4"></i>
+                  <h5>Travel Guides</h5>
+                  <p>
+                    Get personalized tips and advice from our expert travel
+                    guides to enhance your journey.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+              <div class="service-item rounded pt-3">
+                <div class="p-4">
+                  <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                  <h5>Event Management</h5>
+                  <p>
+                    Let us handle your event planning and execution for a
+                    flawless and memorable experience.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="service-item rounded pt-3">
+                <div class="p-4">
+                  <i class="fa fa-3x fa-globe text-primary mb-4"></i>
+                  <h5>WorldWide Tours</h5>
+                  <p>
+                    Explore the world with our tailored tours that cater to all
+                    your travel desires.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+              <div class="service-item rounded pt-3">
+                <div class="p-4">
+                  <i class="fa fa-3x fa-hotel text-primary mb-4"></i>
+                  <h5>Hotel Reservation</h5>
+                  <p>
+                    Find and book the perfect hotel for your stay with our easy
+                    reservation service.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+              <div class="service-item rounded pt-3">
+                <div class="p-4">
+                  <i class="fa fa-3x fa-user text-primary mb-4"></i>
+                  <h5>Travel Guides</h5>
+                  <p>
+                    Our travel guides provide valuable insights and
+                    recommendations for a great trip.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+              <div class="service-item rounded pt-3">
+                <div class="p-4">
+                  <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                  <h5>Event Management</h5>
+                  <p>
+                    Experience smooth and professional event management for all
+                    your special occasions.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-
+      </div>
     </section>
     <!--========== Destination Section ===================-->
     <section class="destination-section" id="destination">
-        <div class="container-xxl py-5 destination">
-            <div class="container">
-                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                    <h6 class="section-title text-center text-primary px-3">
-                        Destination
-                    </h6>
-                    <h1 class="mb-5">Popular Destination</h1>
-                </div>
+      <div class="container-xxl py-5 destination">
+        <div class="container">
+          <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h6 class="section-title text-center text-primary px-3">
+              Destination
+            </h6>
+            <h1 class="mb-5">Popular Destination</h1>
+          </div>
 
-                <div class="row g-3">
-                    <div class="col-lg-7 col-md-6">
-                        <div class="row g-3">
-                            <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
-                                <a href="" class="d-block position-relative overflow-hidden">
-                                    <img src="./img/destination-1.jpg" alt="" class="img-fluid">
-                                    <div
-                                        class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2">
-                                        30% off</div>
-                                    <div
-                                        class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">
-                                        Thailand</div>
-                                </a>
-                            </div>
-                            <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
-                                <a href="" class="d-block position-relative overflow-hidden">
-                                    <img src="./img/destination-2.jpg" alt="" class="img-fluid">
-                                    <div
-                                        class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2">
-                                        50% off</div>
-                                    <div
-                                        class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">
-                                        Malaysia</div>
-                                </a>
-                            </div>
-                            <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.5s">
-                                <a href="" class="d-block position-relative overflow-hidden">
-                                    <img src="./img/destination-3.jpg" alt="" class="img-fluid">
-                                    <div
-                                        class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2">
-                                        25% off</div>
-                                    <div
-                                        class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">
-                                        Australia</div>
-                                </a>
-                            </div>
-                        </div>
+          <div class="row g-3">
+            <div class="col-lg-7 col-md-6">
+              <div class="row g-3">
+                <div
+                  class="col-lg-12 col-md-12 wow zoomIn"
+                  data-wow-delay="0.1s"
+                >
+                  <a href="" class="d-block position-relative overflow-hidden">
+                    <img
+                      src="./img/destination-1.jpg"
+                      alt=""
+                      class="img-fluid"
+                    />
+                    <div
+                      class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2"
+                    >
+                      30% off
                     </div>
-
-                    <div class="col-lg-5 col-md-6 wow zoomIn" data-wow-delay="0.7s" style="min-height:350px">
-                        <a href="" class="d-block position-relative h-100 overflow-hidden">
-                            <img src="./img/destination-4.jpg" alt="" class="img-fluid position-absolute w-100 h-100"
-                                style="object-fit:cover">
-                            <div class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2">20%
-                                off
-                            </div>
-                            <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">
-                                Indonasia</div>
-                        </a>
+                    <div
+                      class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2"
+                    >
+                      Thailand
                     </div>
+                  </a>
                 </div>
+                <div
+                  class="col-lg-6 col-md-12 wow zoomIn"
+                  data-wow-delay="0.3s"
+                >
+                  <a href="" class="d-block position-relative overflow-hidden">
+                    <img
+                      src="./img/destination-2.jpg"
+                      alt=""
+                      class="img-fluid"
+                    />
+                    <div
+                      class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2"
+                    >
+                      50% off
+                    </div>
+                    <div
+                      class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2"
+                    >
+                      Malaysia
+                    </div>
+                  </a>
+                </div>
+                <div
+                  class="col-lg-6 col-md-12 wow zoomIn"
+                  data-wow-delay="0.5s"
+                >
+                  <a href="" class="d-block position-relative overflow-hidden">
+                    <img
+                      src="./img/destination-3.jpg"
+                      alt=""
+                      class="img-fluid"
+                    />
+                    <div
+                      class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2"
+                    >
+                      25% off
+                    </div>
+                    <div
+                      class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2"
+                    >
+                      Australia
+                    </div>
+                  </a>
+                </div>
+              </div>
             </div>
+
+            <div
+              class="col-lg-5 col-md-6 wow zoomIn"
+              data-wow-delay="0.7s"
+              style="min-height: 350px"
+            >
+              <a
+                href=""
+                class="d-block position-relative h-100 overflow-hidden"
+              >
+                <img
+                  src="./img/destination-4.jpg"
+                  alt=""
+                  class="img-fluid position-absolute w-100 h-100"
+                  style="object-fit: cover"
+                />
+                <div
+                  class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2"
+                >
+                  20% off
+                </div>
+                <div
+                  class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2"
+                >
+                  Indonasia
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <!--=============== Package Section ==============-->
     <section class="package section" id="Packages">
-        <div class="container-xxl py-5">
-            <div class="container">
-                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                    <h6 class="section-title text-center text-primary px-3">Packages</h6>
-                    <h1 class="mb-5">Awesome Packages</h1>
+      <div class="container-xxl py-5">
+        <div class="container">
+          <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h6 class="section-title text-center text-primary px-3">
+              Packages
+            </h6>
+            <h1 class="mb-5">Awesome Packages</h1>
+          </div>
+          <div class="row g-4 justify-content-center">
+            <!-- First Row -->
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="package-item">
+                <div class="overflow-hidden">
+                  <img src="./img/package-1.jpg" alt="" class="img-fluid" />
                 </div>
-                <div class="row g-4 justify-content-center">
-
-                    <!-- First Row -->
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="package-item">
-                            <div class="overflow-hidden">
-                                <img src="./img/package-1.jpg" alt="" class="img-fluid">
-                            </div>
-                            <div class="d-flex border-bottom">
-                                <small class="flex-fill text-center border-end py-2">
-                                    <i class="fa fa-map-marker-alt text-primary me-2"></i> Thailand
-                                </small>
-                                <small class="flex-fill text-center border-end py-2">
-                                    <i class="fa fa-calendar-alt text-primary me-2"></i> 7 Days
-                                </small>
-                                <small class="flex-fill text-center border-end py-2">
-                                    <i class="fa fa-user-alt text-primary me-2"></i> 2 Person
-                                </small>
-                            </div>
-
-                            <div class="text-center p-4">
-                                <h3 class="mb-0">₹14999.00</h3>
-                                <div class="mb-3">
-                                    <small class="fa fa-star text-primary"></small>
-                                    <small class="fa fa-star text-primary"></small>
-                                    <small class="fa fa-star text-primary"></small>
-                                    <small class="fa fa-star text-primary"></small>
-                                    <small class="fa fa-star text-primary"></small>
-                                </div>
-                                <p>Explore the vibrant culture and stunning landscapes of Thailand with this 3-day
-                                    package.
-                                    Enjoy guided tours, local cuisine, and unforgettable experiences that showcase the
-                                    best
-                                    of Thai culture and hospitality.</p>
-                                <div class="d-flex justify-content-center mb-3">
-                                    <a href="" class="btn btn-sm btn-primary px-3"
-                                        style="border-radius:30px 0px 0px 30px;">Read More</a>
-                                    <a href="" class="btn btn-sm btn-primary px-3"
-                                        style="border-radius:0 30px 30px 0;">Book
-                                        Now</a>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <!--second package-->
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="package-item">
-                            <div class="overflow-hidden">
-                                <img src="./img/destination-3.jpg" alt="" class="img-fluid">
-                            </div>
-                            <div class="d-flex border-bottom">
-                                <small class="flex-fill text-center border-end py-2">
-                                    <i class="fa fa-map-marker-alt text-primary me-2"></i> Australia
-                                </small>
-                                <small class="flex-fill text-center border-end py-2">
-                                    <i class="fa fa-calendar-alt text-primary me-2"></i> 8 Days
-                                </small>
-                                <small class="flex-fill text-center border-end py-2">
-                                    <i class="fa fa-user-alt text-primary me-2"></i> 4 Person
-                                </small>
-                            </div>
-
-                            <div class="text-center p-4">
-                                <h3 class="mb-0">₹7949.00</h3>
-                                <div class="mb-3">
-                                    <small class="fa fa-star text-primary"></small>
-                                    <small class="fa fa-star text-primary"></small>
-                                    <small class="fa fa-star text-primary"></small>
-                                    <small class="fa fa-star text-primary"></small>
-                                    <small class="fa fa-star text-primary"></small>
-                                </div>
-                                <p>Experience the breathtaking landscapes and lively cities of Australia with this 8-day
-                                    package. Enjoy guided tours, local cuisine, and memorable adventures that highlight
-                                    the
-                                    best of Australian culture and scenery.</p>
-
-                                <div class="d-flex justify-content-center mb-3">
-                                    <a href="" class="btn btn-sm btn-primary px-3"
-                                        style="border-radius:30px 0px 0px 30px;">Read More</a>
-                                    <a href="" class="btn btn-sm btn-primary px-3"
-                                        style="border-radius:0 30px 30px 0;">Book
-                                        Now</a>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <!--Third package-->
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="package-item">
-                            <div class="overflow-hidden">
-                                <img src="./img/destination-2.jpg" alt="" class="img-fluid">
-                            </div>
-                            <div class="d-flex border-bottom">
-                                <small class="flex-fill text-center border-end py-2">
-                                    <i class="fa fa-map-marker-alt text-primary me-2"></i> Malaysia
-                                </small>
-                                <small class="flex-fill text-center border-end py-2">
-                                    <i class="fa fa-calendar-alt text-primary me-2"></i> 3 Days
-                                </small>
-                                <small class="flex-fill text-center border-end py-2">
-                                    <i class="fa fa-user-alt text-primary me-2"></i> 2 Person
-                                </small>
-                            </div>
-
-                            <div class="text-center p-4">
-                                <h3 class="mb-0">$149.00</h3>
-                                <div class="mb-3">
-                                    <small class="fa fa-star text-primary"></small>
-                                    <small class="fa fa-star text-primary"></small>
-                                    <small class="fa fa-star text-primary"></small>
-                                    <small class="fa fa-star text-primary"></small>
-                                    <small class="fa fa-star text-primary"></small>
-                                </div>
-                                <p>Explore the vibrant cities and lush landscapes of Malaysia with this 3-day package.
-                                    Enjoy
-                                    guided tours, taste local delicacies, and experience the diverse culture and warm
-                                    hospitality that Malaysia has to offer.</p>
-
-
-                                <div class="d-flex justify-content-center mb-3">
-                                    <a href="" class="btn btn-sm btn-primary px-3"
-                                        style="border-radius:30px 0px 0px 30px;">Read More</a>
-                                    <a href="" class="btn btn-sm btn-primary px-3"
-                                        style="border-radius:0 30px 30px 0;">Book
-                                        Now</a>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- Second Row -->
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                        <div class="package-item">
-                            <div class="overflow-hidden">
-                                <img src="./img/package4.jpg" alt="" class="img-fluid">
-                            </div>
-                            <div class="d-flex border-bottom">
-                                <small class="flex-fill text-center border-end py-2">
-                                    <i class="fa fa-map-marker-alt text-primary me-2"></i> Japan
-                                </small>
-                                <small class="flex-fill text-center border-end py-2">
-                                    <i class="fa fa-calendar-alt text-primary me-2"></i> 5 Days
-                                </small>
-                                <small class="flex-fill text-center border-end py-2">
-                                    <i class="fa fa-user-alt text-primary me-2"></i> 3 Person
-                                </small>
-                            </div>
-
-                            <div class="text-center p-4">
-                                <h3 class="mb-0">$299.00</h3>
-                                <div class="mb-3">
-                                    <small class="fa fa-star text-primary"></small>
-                                    <small class="fa fa-star text-primary"></small>
-                                    <small class="fa fa-star text-primary"></small>
-                                    <small class="fa fa-star text-primary"></small>
-                                    <small class="fa fa-star text-primary"></small>
-                                </div>
-                                <p>Explore the rich history and modern marvels of Japan with this 5-day package. Visit
-                                    ancient temples, enjoy the vibrant city life, and savor traditional Japanese cuisine
-                                    on
-                                    this unforgettable journey.</p>
-                                <div class="d-flex justify-content-center mb-3">
-                                    <a href="" class="btn btn-sm btn-primary px-3"
-                                        style="border-radius:30px 0px 0px 30px;">Read More</a>
-                                    <a href="" class="btn btn-sm btn-primary px-3"
-                                        style="border-radius:0 30px 30px 0;">Book
-                                        Now</a>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <!--Fourth package-->
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.9s">
-                        <div class="package-item">
-                            <div class="overflow-hidden">
-                                <img src="./img/package5.jpg" alt="" class="img-fluid">
-                            </div>
-                            <div class="d-flex border-bottom">
-                                <small class="flex-fill text-center border-end py-2">
-                                    <i class="fa fa-map-marker-alt text-primary me-2"></i> Spain
-                                </small>
-                                <small class="flex-fill text-center border-end py-2">
-                                    <i class="fa fa-calendar-alt text-primary me-2"></i> 7 Days
-                                </small>
-                                <small class="flex-fill text-center border-end py-2">
-                                    <i class="fa fa-user-alt text-primary me-2"></i> 4 Person
-                                </small>
-                            </div>
-
-                            <div class="text-center p-4">
-                                <h3 class="mb-0">$399.00</h3>
-                                <div class="mb-3">
-                                    <small class="fa fa-star text-primary"></small>
-                                    <small class="fa fa-star text-primary"></small>
-                                    <small class="fa fa-star text-primary"></small>
-                                    <small class="fa fa-star text-primary"></small>
-                                    <small class="fa fa-star text-primary"></small>
-                                </div>
-                                <p>Experience the vibrant culture and diverse landscapes of Spain with this 7-day tour.
-                                    From
-                                    historic cities to beautiful beaches, this package offers a comprehensive
-                                    exploration of
-                                    Spain’s most iconic destinations.</p>
-                                <div class="d-flex justify-content-center mb-3">
-                                    <a href="" class="btn btn-sm btn-primary px-3"
-                                        style="border-radius:30px 0px 0px 30px;">Read More</a>
-                                    <a href="" class="btn btn-sm btn-primary px-3"
-                                        style="border-radius:0 30px 30px 0;">Book
-                                        Now</a>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <!--Fifth package-->
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="1.1s">
-                        <div class="package-item">
-                            <div class="overflow-hidden">
-                                <img src="./img/package6.jpg" alt="" class="img-fluid">
-                            </div>
-                            <div class="d-flex border-bottom">
-                                <small class="flex-fill text-center border-end py-2">
-                                    <i class="fa fa-map-marker-alt text-primary me-2"></i> Italy
-                                </small>
-                                <small class="flex-fill text-center border-end py-2">
-                                    <i class="fa fa-calendar-alt text-primary me-2"></i> 6 Days
-                                </small>
-                                <small class="flex-fill text-center border-end py-2">
-                                    <i class="fa fa-user-alt text-primary me-2"></i> 3 Person
-                                </small>
-                            </div>
-
-                            <div class="text-center p-4">
-                                <h3 class="mb-0">$299.00</h3>
-                                <div class="mb-3">
-                                    <small class="fa fa-star text-primary"></small>
-                                    <small class="fa fa-star text-primary"></small>
-                                    <small class="fa fa-star text-primary"></small>
-                                    <small class="fa fa-star text-primary"></small>
-                                    <small class="fa fa-star text-primary"></small>
-                                </div>
-                                <p>Indulge in the rich history and stunning landscapes of Italy with this 6-day package.
-                                    From exploring ancient ruins to savoring world-famous cuisine, this tour provides a
-                                    deep
-                                    dive into Italy’s cultural treasures.</p>
-                                <div class="d-flex justify-content-center mb-3">
-                                    <a href="" class="btn btn-sm btn-primary px-3"
-                                        style="border-radius:30px 0px 0px 30px;">Read More</a>
-                                    <a href="" class="btn btn-sm btn-primary px-3"
-                                        style="border-radius:0 30px 30px 0;">Book
-                                        Now</a>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
+                <div class="d-flex border-bottom">
+                  <small class="flex-fill text-center border-end py-2">
+                    <i class="fa fa-map-marker-alt text-primary me-2"></i>
+                    Thailand
+                  </small>
+                  <small class="flex-fill text-center border-end py-2">
+                    <i class="fa fa-calendar-alt text-primary me-2"></i> 7 Days
+                  </small>
+                  <small class="flex-fill text-center border-end py-2">
+                    <i class="fa fa-user-alt text-primary me-2"></i> 2 Person
+                  </small>
                 </div>
+
+                <div class="text-center p-4">
+                  <h3 class="mb-0">₹14999.00</h3>
+                  <div class="mb-3">
+                    <small class="fa fa-star text-primary"></small>
+                    <small class="fa fa-star text-primary"></small>
+                    <small class="fa fa-star text-primary"></small>
+                    <small class="fa fa-star text-primary"></small>
+                    <small class="fa fa-star text-primary"></small>
+                  </div>
+                  <p>
+                    Explore the vibrant culture and stunning landscapes of
+                    Thailand with this 3-day package. Enjoy guided tours, local
+                    cuisine, and unforgettable experiences that showcase the
+                    best of Thai culture and hospitality.
+                  </p>
+                  <div class="d-flex justify-content-center mb-3">
+                    <a
+                      href=""
+                      class="btn btn-sm btn-primary px-3"
+                      style="border-radius: 30px 0px 0px 30px"
+                      >Read More</a
+                    >
+                    <a
+                      href=""
+                      class="btn btn-sm btn-primary px-3"
+                      style="border-radius: 0 30px 30px 0"
+                      >Book Now</a
+                    >
+                  </div>
+                </div>
+              </div>
             </div>
+            <!--second package-->
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+              <div class="package-item">
+                <div class="overflow-hidden">
+                  <img src="./img/destination-3.jpg" alt="" class="img-fluid" />
+                </div>
+                <div class="d-flex border-bottom">
+                  <small class="flex-fill text-center border-end py-2">
+                    <i class="fa fa-map-marker-alt text-primary me-2"></i>
+                    Australia
+                  </small>
+                  <small class="flex-fill text-center border-end py-2">
+                    <i class="fa fa-calendar-alt text-primary me-2"></i> 8 Days
+                  </small>
+                  <small class="flex-fill text-center border-end py-2">
+                    <i class="fa fa-user-alt text-primary me-2"></i> 4 Person
+                  </small>
+                </div>
+
+                <div class="text-center p-4">
+                  <h3 class="mb-0">₹7949.00</h3>
+                  <div class="mb-3">
+                    <small class="fa fa-star text-primary"></small>
+                    <small class="fa fa-star text-primary"></small>
+                    <small class="fa fa-star text-primary"></small>
+                    <small class="fa fa-star text-primary"></small>
+                    <small class="fa fa-star text-primary"></small>
+                  </div>
+                  <p>
+                    Experience the breathtaking landscapes and lively cities of
+                    Australia with this 8-day package. Enjoy guided tours, local
+                    cuisine, and memorable adventures that highlight the best of
+                    Australian culture and scenery.
+                  </p>
+
+                  <div class="d-flex justify-content-center mb-3">
+                    <a
+                      href=""
+                      class="btn btn-sm btn-primary px-3"
+                      style="border-radius: 30px 0px 0px 30px"
+                      >Read More</a
+                    >
+                    <a
+                      href=""
+                      class="btn btn-sm btn-primary px-3"
+                      style="border-radius: 0 30px 30px 0"
+                      >Book Now</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Third package-->
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+              <div class="package-item">
+                <div class="overflow-hidden">
+                  <img src="./img/destination-2.jpg" alt="" class="img-fluid" />
+                </div>
+                <div class="d-flex border-bottom">
+                  <small class="flex-fill text-center border-end py-2">
+                    <i class="fa fa-map-marker-alt text-primary me-2"></i>
+                    Malaysia
+                  </small>
+                  <small class="flex-fill text-center border-end py-2">
+                    <i class="fa fa-calendar-alt text-primary me-2"></i> 3 Days
+                  </small>
+                  <small class="flex-fill text-center border-end py-2">
+                    <i class="fa fa-user-alt text-primary me-2"></i> 2 Person
+                  </small>
+                </div>
+
+                <div class="text-center p-4">
+                  <h3 class="mb-0">$149.00</h3>
+                  <div class="mb-3">
+                    <small class="fa fa-star text-primary"></small>
+                    <small class="fa fa-star text-primary"></small>
+                    <small class="fa fa-star text-primary"></small>
+                    <small class="fa fa-star text-primary"></small>
+                    <small class="fa fa-star text-primary"></small>
+                  </div>
+                  <p>
+                    Explore the vibrant cities and lush landscapes of Malaysia
+                    with this 3-day package. Enjoy guided tours, taste local
+                    delicacies, and experience the diverse culture and warm
+                    hospitality that Malaysia has to offer.
+                  </p>
+
+                  <div class="d-flex justify-content-center mb-3">
+                    <a
+                      href=""
+                      class="btn btn-sm btn-primary px-3"
+                      style="border-radius: 30px 0px 0px 30px"
+                      >Read More</a
+                    >
+                    <a
+                      href=""
+                      class="btn btn-sm btn-primary px-3"
+                      style="border-radius: 0 30px 30px 0"
+                      >Book Now</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
         </div>
-        <!-- =========================== hotel and Flight booking forms =========================== -->
-        <section class="booking-section" id="booking">
-            <div class="container-xxl py-5">
-                <div class="container">
-                    <div class="text-center wow fadeInUp" data-wow-delay="0.1s" style="padding-bottom: 0;">
-                        <h6 class="section-title text-center text-primary px-3">Hotels And Flights</h6>
-                        <h1 class="mb-5" style="padding-bottom: 0;">Booking Forms</h1>
-                    </div>
-                    <div class="booking p-5">
-                        <div class="container mt-4">
-                            <ul class="nav nav-tabs" id="bookingTabs" role="tablist">
-                                <li class="nav-item">
-                                    <a class="nav-link active" id="destination-tab" data-bs-toggle="tab"
-                                        href="#destination" role="tab">
-                                        <i class="fas fa-map-marker-alt"></i> Destination
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" id="flight-tab" data-bs-toggle="tab" href="#flight" role="tab">
-                                        <i class="fas fa-plane"></i> Flight
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" id="hotel-tab" data-bs-toggle="tab" href="#hotel" role="tab">
-                                        <i class="fas fa-hotel"></i> Hotel
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" id="payment-tab" data-bs-toggle="tab" href="#payment"
-                                        role="tab">
-                                        <i class="fas fa-credit-card"></i> Payment
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" id="tickets-tab" data-bs-toggle="tab" href="#tickets"
-                                        role="tab">
-                                        <i class="fas fa-ticket-alt"></i> Tickets
-                                    </a>
-                                </li>
-                            </ul>
-                            <div class="tab-content" id="bookingTabsContent">
-                                <div class="tab-content" id="myTabContent">
-                                    <!-- Destination Form -->
-                                    <div class="tab-pane fade show active form-section" id="destination" role="tabpanel"
-                                        aria-labelledby="destination-tab">
-                                        <div class="row g-5 align-items-center">
-                                            <div class="col-md-6 text-white wow fadeInLeft" data-wow-delay="0.1s">
-                                                <h6 class="text-white text-uppercase">Booking</h6>
-                                                <h1 class="text-white mb-4">Online Booking</h1>
-                                                <p class="mb-4">Booking your next adventure has never been easier. With
-                                                    our user-friendly platform, you can find the best deals on flights,
-                                                    hotels, and vacation packages. Whether you're planning a family
-                                                    vacation, a romantic getaway, or a business trip, we've got you
-                                                    covered. Our extensive network of partners ensures you get the best
-                                                    prices and options. Explore our destinations and start planning your
-                                                    trip today!</p>
-                                                <p class="mb-4">Not sure where to go? Check out our travel guides for
-                                                    inspiration. We offer expert advice on popular destinations, hidden
-                                                    gems, and the best times to travel. Plus, our customer service team
-                                                    is available 24/7 to assist you with any questions or concerns. Book
-                                                    with confidence knowing you're getting the best deals and customer
-                                                    support. Let's make your next trip unforgettable!</p>
+        <button type="button" class="btn btn-primary btn-view-more" data-mdb-ripple-init>
+            <a href="./packag.html" class="btn-link text-white">View More</a>
+        </button>
+        
 
-                                                <a href="" class="btn btn-outline-light py-3 px-5 mt-2">Read More</a>
-                                            </div>
-                                            <div class="col-md-6 booking-form p-4 rounded wow fadeInRight"
-                                                data-wow-delay="0.1s">
-                                                <h1 class="mb-4">Book A Destination</h1>
-                                                <form id="destinationForm">
-                                                    <div class="row g-3">
-                                                        <div class="col-md-6">
-                                                            <div class="form-floating">
-                                                                <input type="text" class="form-control bg-transparent"
-                                                                    id="name" placeholder="Your Name">
-                                                                <label for="name">Your Name</label>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <div class="form-floating">
-                                                                <input type="email" class="form-control bg-transparent"
-                                                                    id="email" placeholder="Your Email">
-                                                                <label for="email">Your Email</label>
-                                                            </div>
-                                                        </div>
+      </div>
+    </section>
+    <!-- =========================== hotel and Flight booking forms =========================== -->
+    <section class="booking-section" id="booking">
+      <div class="container-xxl py-5">
+        <div class="container">
+          <div
+            class="text-center wow fadeInUp"
+            data-wow-delay="0.1s"
+            style="padding-bottom: 0"
+          >
+            <h6 class="section-title text-center text-primary px-3">
+              Hotels And Flights
+            </h6>
+            <h1 class="mb-5" style="padding-bottom: 0">Booking Forms</h1>
+          </div>
+          <div class="booking p-5">
+            <div class="container mt-4">
+              <ul class="nav nav-tabs" id="bookingTabs" role="tablist">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    id="destination-tab"
+                    data-bs-toggle="tab"
+                    href="#destination"
+                    role="tab"
+                  >
+                    <i class="fas fa-map-marker-alt"></i> Destination
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    id="flight-tab"
+                    data-bs-toggle="tab"
+                    href="#flight"
+                    role="tab"
+                  >
+                    <i class="fas fa-plane"></i> Flight
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    id="hotel-tab"
+                    data-bs-toggle="tab"
+                    href="#hotel"
+                    role="tab"
+                  >
+                    <i class="fas fa-hotel"></i> Hotel
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    id="payment-tab"
+                    data-bs-toggle="tab"
+                    href="#payment"
+                    role="tab"
+                  >
+                    <i class="fas fa-credit-card"></i> Payment
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    id="tickets-tab"
+                    data-bs-toggle="tab"
+                    href="#tickets"
+                    role="tab"
+                  >
+                    <i class="fas fa-ticket-alt"></i> Tickets
+                  </a>
+                </li>
+              </ul>
+              <div class="tab-content" id="bookingTabsContent">
+                <div class="tab-content" id="myTabContent">
+                  <!-- Destination Form -->
+                  <div
+                    class="tab-pane fade show active form-section"
+                    id="destination"
+                    role="tabpanel"
+                    aria-labelledby="destination-tab"
+                  >
+                    <div class="row g-5 align-items-center">
+                      <div
+                        class="col-md-6 text-white wow fadeInLeft"
+                        data-wow-delay="0.1s"
+                      >
+                        <h6 class="text-white text-uppercase">Booking</h6>
+                        <h1 class="text-white mb-4">Online Booking</h1>
+                        <p class="mb-4">
+                          Booking your next adventure has never been easier.
+                          With our user-friendly platform, you can find the best
+                          deals on flights, hotels, and vacation packages.
+                          Whether you're planning a family vacation, a romantic
+                          getaway, or a business trip, we've got you covered.
+                          Our extensive network of partners ensures you get the
+                          best prices and options. Explore our destinations and
+                          start planning your trip today!
+                        </p>
+                        <p class="mb-4">
+                          Not sure where to go? Check out our travel guides for
+                          inspiration. We offer expert advice on popular
+                          destinations, hidden gems, and the best times to
+                          travel. Plus, our customer service team is available
+                          24/7 to assist you with any questions or concerns.
+                          Book with confidence knowing you're getting the best
+                          deals and customer support. Let's make your next trip
+                          unforgettable!
+                        </p>
 
-                                                        <div class="col-md-6">
-                                                            <div class="form-floating">
-                                                                <input type="date" class="form-control bg-transparent"
-                                                                    id="datetime">
-                                                                <label for="datetime">Date & Time</label>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <div class="form-floating">
-                                                                <select id="destinationSelect"
-                                                                    class="form-select bg-transparent">
-                                                                    <option value="">Select Destination</option>
-                                                                    <option value="1">Destination 1</option>
-                                                                    <option value="2">Destination 2</option>
-                                                                    <option value="3">Destination 3</option>
-                                                                </select>
-                                                                <label for="destinationSelect">Destination</label>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="col-12">
-                                                            <div class="form-floating">
-                                                                <textarea class="form-control bg-transparent"
-                                                                    placeholder="Special Request" id="message"
-                                                                    style="height: 100px;"></textarea>
-                                                                <label for="message">Special Request</label>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12">
-                                                            <button class="btn btn-outline-light w-100 py-3"
-                                                                type="submit">Book
-                                                                Now</button>
-                                                        </div>
-                                                    </div>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane fade form-section" id="flight" role="tabpanel"
-                                        aria-labelledby="flight-tab">
-                                        <div class="row g-5 align-items-center">
-                                            <div class="col-md-6 fadeInLeft" data-wow-delay="0.1s">
-                                                <img src="./img/flight.png" class="img-fluid rounded"
-                                                    alt="Flight Image">
-                                            </div>
-                                            <div class="col-md-6 booking-form p-4 rounded fadeInRight"
-                                                data-wow-delay="0.1s">
-                                                <h1 class="mb-4">Flight Booking</h1>
-                                                <form id="flightForm">
-                                                    <div class="row g-3">
-                                                        <div class="col-md-6">
-                                                            <div class="form-floating mb-3">
-                                                                <input type="text" class="form-control bg-transparent"
-                                                                    list="datalistOptionsFrom" id="fromCity"
-                                                                    placeholder="From" required>
-                                                                <label for="fromCity">From</label>
-                                                                <datalist id="datalistOptionsFrom">
-                                                                    <option value="San Francisco">
-                                                                    <option value="New York">
-                                                                    <option value="Seattle">
-                                                                    <option value="Los Angeles">
-                                                                    <option value="Chicago">
-                                                                </datalist>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <div class="form-floating mb-3">
-                                                                <input type="text" class="form-control bg-transparent"
-                                                                    list="datalistOptionsTo" id="toCity"
-                                                                    placeholder="To" required>
-                                                                <label for="toCity">To</label>
-                                                                <datalist id="datalistOptionsTo">
-                                                                    <option value="San Francisco">
-                                                                    <option value="New York">
-                                                                    <option value="Seattle">
-                                                                    <option value="Los Angeles">
-                                                                    <option value="Chicago">
-                                                                </datalist>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <div class="form-floating">
-                                                                <input type="date" class="form-control bg-transparent"
-                                                                    id="flightDate" required>
-                                                                <label for="flightDate">Departure Date</label>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <div class="form-floating">
-                                                                <input type="date" class="form-control bg-transparent"
-                                                                    id="returnDate"
-                                                                    placeholder="Return Date (optional)">
-                                                                <label for="returnDate">Return Date (optional)</label>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <div class="form-floating">
-                                                                <select id="flightClass"
-                                                                    class="form-select bg-transparent" required>
-                                                                    <option value="Economy">Economy</option>
-                                                                    <option value="Business">Business</option>
-                                                                    <option value="First Class">First Class</option>
-                                                                </select>
-                                                                <label for="flightClass">Class</label>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <div class="form-floating">
-                                                                <input type="number" class="form-control bg-transparent"
-                                                                    id="passengers" placeholder="Number of Passengers"
-                                                                    min="1" required>
-                                                                <label for="passengers">Number of Passengers</label>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12">
-                                                            <button class="btn btn-outline-light w-100 py-3"
-                                                                type="submit">Search Flights</button>
-                                                        </div>
-                                                    </div>
-                                                </form>
-                                            </div>
-                                            <div id="flightResults" class="mt-4 d-none">
-                                                <h1 class="mb-4 text-white text-center">Flight Results</h1>
-                                                <div class="table-responsive">
-                                                    <table
-                                                        class="table table-light table-striped table-hover shadow-sm rounded">
-                                                        <thead>
-                                                            <tr>
-                                                                <th>No.</th>
-                                                                <th>Name of Airlines</th>
-                                                                <th>Description</th>
-                                                                <th>Rate of Airlines</th>
-                                                                <th>Per Person Ticket Price</th>
-                                                                <th>Select</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody id="flightTableBody">
-                                                            <!-- Dynamic content will be inserted here -->
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-
-                                                <button id="confirmFlightSelection"
-                                                    class="btn btn-outline-light w-100 py-3 mt-3"
-                                                    type="button">Confirm</button>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                    <!-- Hotel Booking Form -->
-                                    <div class="tab-pane fade form-section" id="hotel" role="tabpanel"
-                                        aria-labelledby="hotel-tab">
-                                        <div class="row g-5 align-items-center">
-                                            <div class="col-md-6 booking-form p-4 rounded fadeInLeft"
-                                                data-wow-delay="0.01s">
-                                                <h1 class="mb-4">Hotel Booking</h1>
-                                                <form id="hotelForm" novalidate>
-                                                    <div class="row g-3">
-                                                        <div class="col-md-6">
-                                                            <div class="form-floating">
-                                                                <input type="date" class="form-control bg-transparent"
-                                                                    id="checkInDate" placeholder="Check-In Date"
-                                                                    required>
-                                                                <label for="checkInDate">Check-In Date</label>
-                                                                <div class="invalid-feedback">Check-In Date is required.
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <div class="form-floating">
-                                                                <input type="date" class="form-control bg-transparent"
-                                                                    id="checkOutDate" placeholder="Check-Out Date"
-                                                                    required>
-                                                                <label for="checkOutDate">Check-Out Date</label>
-                                                                <div class="invalid-feedback">Check-Out Date is
-                                                                    required.</div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <div class="form-floating">
-                                                                <select id="roomType" class="form-select bg-transparent"
-                                                                    required>
-                                                                    <option value="">Select Room Type</option>
-                                                                    <option value="Single">Single</option>
-                                                                    <option value="Double">Double</option>
-                                                                </select>
-                                                                <label for="roomType">Room Type</label>
-                                                                <div class="invalid-feedback">Room Type is required.
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <div class="form-floating">
-                                                                <input type="number" class="form-control bg-transparent"
-                                                                    id="numAdultsHotel" placeholder="Number of Adults"
-                                                                    required>
-                                                                <label for="numAdultsHotel">Number of Adults</label>
-                                                                <div class="invalid-feedback">Number of Adults is
-                                                                    required.
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <div class="form-floating">
-                                                                <input type="number" class="form-control bg-transparent"
-                                                                    id="numChildrenHotel"
-                                                                    placeholder="Number of Children">
-                                                                <label for="numChildrenHotel">Number of Children</label>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12">
-                                                            <button class="btn btn-outline-light w-100 py-3"
-                                                                type="submit">Search Hotels</button>
-                                                        </div>
-                                                    </div>
-                                                </form>
-                                            </div>
-                                            <div class="col-md-6 fadeInRight" data-wow-delay="0.01s">
-                                                <img src="./img/hotel.png" class="img-fluid rounded" alt="Hotel Image">
-                                            </div>
-                                            <div id="hotelResults" class="mt-4 d-none">
-                                                <h1 class="mb-4 text-white text-center">Hotels List</h1>
-                                                <div class="table-responsive">
-                                                    <table
-                                                        class="table table-light table-striped table-hover shadow-sm rounded">
-                                                        <thead>
-                                                            <tr>
-                                                                <th>No.</th>
-                                                                <th>Name of Hotel</th>
-                                                                <th>Description</th>
-                                                                <th>Rate of Hotel</th>
-                                                                <th>Per Person Ticket Price</th>
-                                                                <th>Select</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody id="hotelTableBody">
-                                                            <!-- Dynamic content will be inserted here -->
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-
-                                                <button id="confirmHotelSelection"
-                                                    class="btn btn-outline-light w-100 py-3 mt-3"
-                                                    type="button">Confirm</button>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                    <!-- Payment Form -->
-                                    <div class="tab-pane fade form-section" id="payment" role="tabpanel"
-                                        aria-labelledby="payment-tab">
-                                        <div class="row g-5 align-items-center">
-                                            <div class="col-md-6 fadeInLeft" data-wow-delay="0.01s">
-                                                <img src="./img/payment.png" class="img-fluid rounded"
-                                                    alt="Payment Image">
-                                            </div>
-                                            <div class="col-md-6 booking-form p-4 rounded fadeInRight"
-                                                data-wow-delay="0.01s">
-                                                <h1 class="mb-4">Payment Details</h1>
-                                                <form id="paymentForm" novalidate>
-                                                    <div class="row g-3">
-                                                        <!-- Card Details -->
-                                                        <div class="col-md-12 mb-3">
-                                                            <label for="card-element" class="form-label">Credit or Debit
-                                                                Card</label>
-                                                            <div id="card-element" class="form-control bg-transparent"
-                                                                aria-describedby="cardHelp"></div>
-                                                            <div id="card-errors" role="alert" class="text-danger">
-                                                            </div>
-                                                            <small id="cardHelp" class="form-text text-muted">Enter your
-                                                                card details securely.</small>
-                                                        </div>
-
-                                                        <!-- Billing Information -->
-                                                        <div class="col-md-6">
-                                                            <div class="form-floating">
-                                                                <input type="text" class="form-control bg-transparent"
-                                                                    id="billingName" placeholder="Full Name" required>
-                                                                <label for="billingName">Full Name</label>
-                                                                <div class="invalid-feedback">Please enter your full
-                                                                    name.</div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <div class="form-floating">
-                                                                <input type="text" class="form-control bg-transparent"
-                                                                    id="billingAddress" placeholder="Billing Address"
-                                                                    required>
-                                                                <label for="billingAddress">Billing Address</label>
-                                                                <div class="invalid-feedback">Please enter your billing
-                                                                    address.</div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <div class="form-floating">
-                                                                <input type="email" class="form-control bg-transparent"
-                                                                    id="billingEmail" placeholder="Email Address"
-                                                                    required>
-                                                                <label for="billingEmail">Email Address</label>
-                                                                <div class="invalid-feedback">Please enter a valid email
-                                                                    address.</div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <div class="form-floating">
-                                                                <input type="tel" class="form-control bg-transparent"
-                                                                    id="billingPhone" placeholder="Phone Number"
-                                                                    required>
-                                                                <label for="billingPhone">Phone Number</label>
-                                                                <div class="invalid-feedback">Please enter your phone
-                                                                    number.</div>
-                                                            </div>
-                                                        </div>
-
-                                                        <!-- Payment Options -->
-                                                        <div class="col-md-12 mb-3">
-                                                            <label class="form-label">Payment Method</label>
-                                                            <select id="payment-method"
-                                                                class="form-control bg-transparent" required>
-                                                                <option value="card" selected>Credit/Debit Card</option>
-                                                                <option value="paypal">PayPal</option>
-                                                                <option value="bank-transfer">Bank Transfer</option>
-                                                                <option value="google-pay">Google Pay</option>
-                                                                <option value="apple-pay">Apple Pay</option>
-                                                            </select>
-                                                        </div>
-
-                                                        <!-- Submit Button -->
-                                                        <div class="col-12">
-                                                            <button id="submit" class="btn btn-outline-light w-100 py-3"
-                                                                type="submit">Make Payment</button>
-                                                        </div>
-                                                    </div>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-
-                                    <!-- Tickets Section -->
-                                    <div class="tab-pane fade" id="tickets" role="tabpanel">
-                                        <h3 class="text-white text-center">Your Booking Tickets</h3>
-                                        <div id="ticketDetails" class="ticket-container">
-                                            <!-- Ticket details will be dynamically populated here after payment -->
-                                        </div>
-                                    </div>
-
-                                </div>
+                        <a href="" class="btn btn-outline-light py-3 px-5 mt-2"
+                          >Read More</a
+                        >
+                      </div>
+                      <div
+                        class="col-md-6 booking-form p-4 rounded wow fadeInRight"
+                        data-wow-delay="0.1s"
+                      >
+                        <h1 class="mb-4">Book A Destination</h1>
+                        <form id="destinationForm">
+                          <div class="row g-3">
+                            <div class="col-md-6">
+                              <div class="form-floating">
+                                <input
+                                  type="text"
+                                  class="form-control bg-transparent"
+                                  id="name"
+                                  placeholder="Your Name"
+                                />
+                                <label for="name">Your Name</label>
+                              </div>
                             </div>
-                        </div>
-                    </div>
-        </section>
-
-
-
-
-
-
-
-        <!--================== Process start ==============================-->
-        <section class="process-section" id="process">
-            <div class="container-xxl py-5">
-                <div class="container">
-                    <div class="text-center pb-4 wow fadeInUp" data-wow-delay="0.1s">
-                        <h6 class="section-title text-center text-primary px-3">Process</h6>
-                        <h1 class="mb-5">Easy Steps</h1>
-                    </div>
-
-                    <div class="row gy-5 gx-4 justify-content-center">
-                        <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.1s">
-                            <div class="position-relative border border-primary pt-5 pb-4 px-4">
-                                <div class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle position-absolute top-0 start-50 translate-middle shadow"
-                                    style="width:100px;height:100px;">
-                                    <i class="fa fa-globe fa-3x text-white"></i>
-                                </div>
-                                <h5 class="mt-4">Choose A Destination</h5>
-                                <hr>
-
-                                <p class="mb-0">Start your journey by selecting your desired destination. Browse through
-                                    our
-                                    wide range of travel options and choose the one that excites you the most. Whether
-                                    it's
-                                    a
-                                    tropical beach or a bustling city, we have something for everyone.</p>
+                            <div class="col-md-6">
+                              <div class="form-floating">
+                                <input
+                                  type="email"
+                                  class="form-control bg-transparent"
+                                  id="email"
+                                  placeholder="Your Email"
+                                />
+                                <label for="email">Your Email</label>
+                              </div>
                             </div>
+
+                            <div class="col-md-6">
+                              <div class="form-floating">
+                                <input
+                                  type="date"
+                                  class="form-control bg-transparent"
+                                  id="datetime"
+                                />
+                                <label for="datetime">Date & Time</label>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-floating">
+                                <select
+                                  id="destinationSelect"
+                                  class="form-select bg-transparent"
+                                >
+                                  <option value="">Select Destination</option>
+                                  <option value="1">Destination 1</option>
+                                  <option value="2">Destination 2</option>
+                                  <option value="3">Destination 3</option>
+                                </select>
+                                <label for="destinationSelect"
+                                  >Destination</label
+                                >
+                              </div>
+                            </div>
+
+                            <div class="col-12">
+                              <div class="form-floating">
+                                <textarea
+                                  class="form-control bg-transparent"
+                                  placeholder="Special Request"
+                                  id="message"
+                                  style="height: 100px"
+                                ></textarea>
+                                <label for="message">Special Request</label>
+                              </div>
+                            </div>
+                            <div class="col-12">
+                              <button
+                                class="btn btn-outline-light w-100 py-3"
+                                type="submit"
+                              >
+                                Book Now
+                              </button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="tab-pane fade form-section"
+                    id="flight"
+                    role="tabpanel"
+                    aria-labelledby="flight-tab"
+                  >
+                    <div class="row g-5 align-items-center">
+                      <div class="col-md-6 fadeInLeft" data-wow-delay="0.1s">
+                        <img
+                          src="./img/flight.png"
+                          class="img-fluid rounded"
+                          alt="Flight Image"
+                        />
+                      </div>
+                      <div
+                        class="col-md-6 booking-form p-4 rounded fadeInRight"
+                        data-wow-delay="0.1s"
+                      >
+                        <h1 class="mb-4">Flight Booking</h1>
+                        <form id="flightForm">
+                          <div class="row g-3">
+                            <div class="col-md-6">
+                              <div class="form-floating mb-3">
+                                <input
+                                  type="text"
+                                  class="form-control bg-transparent"
+                                  list="datalistOptionsFrom"
+                                  id="fromCity"
+                                  placeholder="From"
+                                  required
+                                />
+                                <label for="fromCity">From</label>
+                                <datalist id="datalistOptionsFrom">
+                                  <option value="San Francisco"></option>
+                                  <option value="New York"></option>
+                                  <option value="Seattle"></option>
+                                  <option value="Los Angeles"></option>
+                                  <option value="Chicago"></option>
+                                </datalist>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-floating mb-3">
+                                <input
+                                  type="text"
+                                  class="form-control bg-transparent"
+                                  list="datalistOptionsTo"
+                                  id="toCity"
+                                  placeholder="To"
+                                  required
+                                />
+                                <label for="toCity">To</label>
+                                <datalist id="datalistOptionsTo">
+                                  <option value="San Francisco"></option>
+                                  <option value="New York"></option>
+                                  <option value="Seattle"></option>
+                                  <option value="Los Angeles"></option>
+                                  <option value="Chicago"></option>
+                                </datalist>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-floating">
+                                <input
+                                  type="date"
+                                  class="form-control bg-transparent"
+                                  id="flightDate"
+                                  required
+                                />
+                                <label for="flightDate">Departure Date</label>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-floating">
+                                <input
+                                  type="date"
+                                  class="form-control bg-transparent"
+                                  id="returnDate"
+                                  placeholder="Return Date (optional)"
+                                />
+                                <label for="returnDate"
+                                  >Return Date (optional)</label
+                                >
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-floating">
+                                <select
+                                  id="flightClass"
+                                  class="form-select bg-transparent"
+                                  required
+                                >
+                                  <option value="Economy">Economy</option>
+                                  <option value="Business">Business</option>
+                                  <option value="First Class">
+                                    First Class
+                                  </option>
+                                </select>
+                                <label for="flightClass">Class</label>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-floating">
+                                <input
+                                  type="number"
+                                  class="form-control bg-transparent"
+                                  id="passengers"
+                                  placeholder="Number of Passengers"
+                                  min="1"
+                                  required
+                                />
+                                <label for="passengers"
+                                  >Number of Passengers</label
+                                >
+                              </div>
+                            </div>
+                            <div class="col-12">
+                              <button
+                                class="btn btn-outline-light w-100 py-3"
+                                type="submit"
+                              >
+                                Search Flights
+                              </button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                      <div id="flightResults" class="mt-4 d-none">
+                        <h1 class="mb-4 text-white text-center">
+                          Flight Results
+                        </h1>
+                        <div class="table-responsive">
+                          <table
+                            class="table table-light table-striped table-hover shadow-sm rounded"
+                          >
+                            <thead>
+                              <tr>
+                                <th>No.</th>
+                                <th>Name of Airlines</th>
+                                <th>Description</th>
+                                <th>Rate of Airlines</th>
+                                <th>Per Person Ticket Price</th>
+                                <th>Select</th>
+                              </tr>
+                            </thead>
+                            <tbody id="flightTableBody">
+                              <!-- Dynamic content will be inserted here -->
+                            </tbody>
+                          </table>
                         </div>
 
-                        <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.3s">
-                            <div class="position-relative border border-primary pt-5 pb-4 px-4">
-                                <div class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle position-absolute top-0 start-50 translate-middle shadow"
-                                    style="width:100px;height:100px;">
-                                    <i class="fa fa-dollar-sign fa-3x text-white"></i>
-                                </div>
-                                <h5 class="mt-4">Select Your Package</h5>
-                                <hr>
-
-                                <p class="mb-0">Choose the perfect package that fits your budget and preferences. Our
-                                    packages
-                                    are designed to offer the best experiences at competitive prices. Review the
-                                    inclusions,
-                                    and
-                                    select the one that meets your travel needs.</p>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.5s">
-                            <div class="position-relative border border-primary pt-5 pb-4 px-4">
-                                <div class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle position-absolute top-0 start-50 translate-middle shadow"
-                                    style="width:100px;height:100px;">
-                                    <i class="fa fa-plane fa-3x text-white"></i>
-                                </div>
-                                <h5 class="mt-4">Book Your Trip</h5>
-                                <hr>
-
-                                <p class="mb-0">Finalize your booking by providing your details and making the payment.
-                                    Our
-                                    easy-to-use booking system ensures a smooth and secure process. Receive your travel
-                                    confirmation and prepare for an unforgettable journey.</p>
-                            </div>
-                        </div>
+                        <button
+                          id="confirmFlightSelection"
+                          class="btn btn-outline-light w-100 py-3 mt-3"
+                          type="button"
+                        >
+                          Confirm
+                        </button>
+                      </div>
                     </div>
+                  </div>
+
+                  <!-- Hotel Booking Form -->
+                  <div
+                    class="tab-pane fade form-section"
+                    id="hotel"
+                    role="tabpanel"
+                    aria-labelledby="hotel-tab"
+                  >
+                    <div class="row g-5 align-items-center">
+                      <div
+                        class="col-md-6 booking-form p-4 rounded fadeInLeft"
+                        data-wow-delay="0.01s"
+                      >
+                        <h1 class="mb-4">Hotel Booking</h1>
+                        <form id="hotelForm" novalidate>
+                          <div class="row g-3">
+                            <div class="col-md-6">
+                              <div class="form-floating">
+                                <input
+                                  type="date"
+                                  class="form-control bg-transparent"
+                                  id="checkInDate"
+                                  placeholder="Check-In Date"
+                                  required
+                                />
+                                <label for="checkInDate">Check-In Date</label>
+                                <div class="invalid-feedback">
+                                  Check-In Date is required.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-floating">
+                                <input
+                                  type="date"
+                                  class="form-control bg-transparent"
+                                  id="checkOutDate"
+                                  placeholder="Check-Out Date"
+                                  required
+                                />
+                                <label for="checkOutDate">Check-Out Date</label>
+                                <div class="invalid-feedback">
+                                  Check-Out Date is required.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-floating">
+                                <select
+                                  id="roomType"
+                                  class="form-select bg-transparent"
+                                  required
+                                >
+                                  <option value="">Select Room Type</option>
+                                  <option value="Single">Single</option>
+                                  <option value="Double">Double</option>
+                                </select>
+                                <label for="roomType">Room Type</label>
+                                <div class="invalid-feedback">
+                                  Room Type is required.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-floating">
+                                <input
+                                  type="number"
+                                  class="form-control bg-transparent"
+                                  id="numAdultsHotel"
+                                  placeholder="Number of Adults"
+                                  required
+                                />
+                                <label for="numAdultsHotel"
+                                  >Number of Adults</label
+                                >
+                                <div class="invalid-feedback">
+                                  Number of Adults is required.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-floating">
+                                <input
+                                  type="number"
+                                  class="form-control bg-transparent"
+                                  id="numChildrenHotel"
+                                  placeholder="Number of Children"
+                                />
+                                <label for="numChildrenHotel"
+                                  >Number of Children</label
+                                >
+                              </div>
+                            </div>
+                            <div class="col-12">
+                              <button
+                                class="btn btn-outline-light w-100 py-3"
+                                type="submit"
+                              >
+                                Search Hotels
+                              </button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="col-md-6 fadeInRight" data-wow-delay="0.01s">
+                        <img
+                          src="./img/hotel.png"
+                          class="img-fluid rounded"
+                          alt="Hotel Image"
+                        />
+                      </div>
+                      <div id="hotelResults" class="mt-4 d-none">
+                        <h1 class="mb-4 text-white text-center">Hotels List</h1>
+                        <div class="table-responsive">
+                          <table
+                            class="table table-light table-striped table-hover shadow-sm rounded"
+                          >
+                            <thead>
+                              <tr>
+                                <th>No.</th>
+                                <th>Name of Hotel</th>
+                                <th>Description</th>
+                                <th>Rate of Hotel</th>
+                                <th>Per Person Ticket Price</th>
+                                <th>Select</th>
+                              </tr>
+                            </thead>
+                            <tbody id="hotelTableBody">
+                              <!-- Dynamic content will be inserted here -->
+                            </tbody>
+                          </table>
+                        </div>
+
+                        <button
+                          id="confirmHotelSelection"
+                          class="btn btn-outline-light w-100 py-3 mt-3"
+                          type="button"
+                        >
+                          Confirm
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Payment Form -->
+                  <div
+                    class="tab-pane fade form-section"
+                    id="payment"
+                    role="tabpanel"
+                    aria-labelledby="payment-tab"
+                  >
+                    <div class="row g-5 align-items-center">
+                      <div class="col-md-6 fadeInLeft" data-wow-delay="0.01s">
+                        <img
+                          src="./img/payment.png"
+                          class="img-fluid rounded"
+                          alt="Payment Image"
+                        />
+                      </div>
+                      <div
+                        class="col-md-6 booking-form p-4 rounded fadeInRight"
+                        data-wow-delay="0.01s"
+                      >
+                        <h1 class="mb-4">Payment Details</h1>
+                        <form id="paymentForm" novalidate>
+                          <div class="row g-3">
+                            <!-- Card Details -->
+                            <div class="col-md-12 mb-3">
+                              <label for="card-element" class="form-label"
+                                >Credit or Debit Card</label
+                              >
+                              <div
+                                id="card-element"
+                                class="form-control bg-transparent"
+                                aria-describedby="cardHelp"
+                              ></div>
+                              <div
+                                id="card-errors"
+                                role="alert"
+                                class="text-danger"
+                              ></div>
+                              <small id="cardHelp" class="form-text text-muted"
+                                >Enter your card details securely.</small
+                              >
+                            </div>
+
+                            <!-- Billing Information -->
+                            <div class="col-md-6">
+                              <div class="form-floating">
+                                <input
+                                  type="text"
+                                  class="form-control bg-transparent"
+                                  id="billingName"
+                                  placeholder="Full Name"
+                                  required
+                                />
+                                <label for="billingName">Full Name</label>
+                                <div class="invalid-feedback">
+                                  Please enter your full name.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-floating">
+                                <input
+                                  type="text"
+                                  class="form-control bg-transparent"
+                                  id="billingAddress"
+                                  placeholder="Billing Address"
+                                  required
+                                />
+                                <label for="billingAddress"
+                                  >Billing Address</label
+                                >
+                                <div class="invalid-feedback">
+                                  Please enter your billing address.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-floating">
+                                <input
+                                  type="email"
+                                  class="form-control bg-transparent"
+                                  id="billingEmail"
+                                  placeholder="Email Address"
+                                  required
+                                />
+                                <label for="billingEmail">Email Address</label>
+                                <div class="invalid-feedback">
+                                  Please enter a valid email address.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-floating">
+                                <input
+                                  type="tel"
+                                  class="form-control bg-transparent"
+                                  id="billingPhone"
+                                  placeholder="Phone Number"
+                                  required
+                                />
+                                <label for="billingPhone">Phone Number</label>
+                                <div class="invalid-feedback">
+                                  Please enter your phone number.
+                                </div>
+                              </div>
+                            </div>
+
+                            <!-- Payment Options -->
+                            <div class="col-md-12 mb-3">
+                              <label class="form-label">Payment Method</label>
+                              <select
+                                id="payment-method"
+                                class="form-control bg-transparent"
+                                required
+                              >
+                                <option value="card" selected>
+                                  Credit/Debit Card
+                                </option>
+                                <option value="paypal">PayPal</option>
+                                <option value="bank-transfer">
+                                  Bank Transfer
+                                </option>
+                                <option value="google-pay">Google Pay</option>
+                                <option value="apple-pay">Apple Pay</option>
+                              </select>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <div class="col-12">
+                              <button
+                                id="submit"
+                                class="btn btn-outline-light w-100 py-3"
+                                type="submit"
+                              >
+                                Make Payment
+                              </button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Tickets Section -->
+                  <div class="tab-pane fade" id="tickets" role="tabpanel">
+                    <h3 class="text-white text-center">Your Booking Tickets</h3>
+                    <div id="ticketDetails" class="ticket-container">
+                      <!-- Ticket details will be dynamically populated here after payment -->
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
-        </section>
-
-        <!--================== Team Section =========================-->
-        <section class="team-section" id="team">
-
-            <div class="container-xxl py-5">
-                <div class="container">
-                    <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                        <h6 class="section-title text-center text-primary px-3">Travel Guide</h6>
-                        <h1 class="mb-5">Meet Our Guides</h1>
-                    </div>
-
-                    <div class="row g-4">
-
-                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                            <div class="team-item">
-                                <div class="overflow-hidden">
-                                    <img class="img-fluid" src="./img/team-1.jpg" alt="Guide Image">
-                                </div>
-
-                                <div class="position-relative d-flex justify-content-center" style="margin-top:-19px;">
-                                    <a href="https://facebook.com/guide1" class="btn btn-square mx-1" target="_blank">
-                                        <i class="fab fa-facebook-f"></i>
-                                    </a>
-                                    <a href="https://twitter.com/guide1" class="btn btn-square mx-1" target="_blank">
-                                        <i class="fab fa-twitter"></i>
-                                    </a>
-                                    <a href="https://instagram.com/guide1" class="btn btn-square mx-1" target="_blank">
-                                        <i class="fab fa-instagram"></i>
-                                    </a>
-                                </div>
-
-                                <div class="text-center p-4">
-                                    <h5 class="mb-0">Emily Johnson</h5>
-                                    <small>Thailand Specialist</small>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                            <div class="team-item">
-                                <div class="overflow-hidden">
-                                    <img class="img-fluid" src="./img/team-2.jpg" alt="Guide Image">
-                                </div>
-
-                                <div class="position-relative d-flex justify-content-center" style="margin-top:-19px;">
-                                    <a href="https://facebook.com/guide2" class="btn btn-square mx-1" target="_blank">
-                                        <i class="fab fa-facebook-f"></i>
-                                    </a>
-                                    <a href="https://twitter.com/guide2" class="btn btn-square mx-1" target="_blank">
-                                        <i class="fab fa-twitter"></i>
-                                    </a>
-                                    <a href="https://instagram.com/guide2" class="btn btn-square mx-1" target="_blank">
-                                        <i class="fab fa-instagram"></i>
-                                    </a>
-                                </div>
-
-                                <div class="text-center p-4">
-                                    <h5 class="mb-0">Emily Johnson</h5>
-                                    <small>Bali Expert</small>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                            <div class="team-item">
-                                <div class="overflow-hidden">
-                                    <img class="img-fluid" src="./img/team-3.jpg" alt="Guide Image">
-                                </div>
-
-                                <div class="position-relative d-flex justify-content-center" style="margin-top:-19px;">
-                                    <a href="https://facebook.com/guide3" class="btn btn-square mx-1" target="_blank">
-                                        <i class="fab fa-facebook-f"></i>
-                                    </a>
-                                    <a href="https://twitter.com/guide3" class="btn btn-square mx-1" target="_blank">
-                                        <i class="fab fa-twitter"></i>
-                                    </a>
-                                    <a href="https://instagram.com/guide3" class="btn btn-square mx-1" target="_blank">
-                                        <i class="fab fa-instagram"></i>
-                                    </a>
-                                </div>
-
-                                <div class="text-center p-4">
-                                    <h5 class="mb-0">Jhon Simth</h5>
-                                    <small>Paris Connoisseur</small>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                            <div class="team-item">
-                                <div class="overflow-hidden">
-                                    <img class="img-fluid" src="./img/team-4.jpg" alt="Guide Image">
-                                </div>
-
-                                <div class="position-relative d-flex justify-content-center" style="margin-top:-19px;">
-                                    <a href="https://facebook.com/guide4" class="btn btn-square mx-1" target="_blank">
-                                        <i class="fab fa-facebook-f"></i>
-                                    </a>
-                                    <a href="https://twitter.com/guide4" class="btn btn-square mx-1" target="_blank">
-                                        <i class="fab fa-twitter"></i>
-                                    </a>
-                                    <a href="https://instagram.com/guide4" class="btn btn-square mx-1" target="_blank">
-                                        <i class="fab fa-instagram"></i>
-                                    </a>
-                                </div>
-
-                                <div class="text-center p-4">
-                                    <h5 class="mb-0">Liza Brown</h5>
-                                    <small>Tokyo Enthusiast</small>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--================== Testimonial Section ==========================-->
-        <section class="pt-0 pb-5" id="testimonial">
-
-            <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="container">
-                    <div class="text-center">
-                        <h6 class="section-title text-center text-primary px-3">Testimonial</h6>
-                        <h1 class="mb-5">Our Clients Say!!!</h1>
-                    </div>
-
-                    <div class="owl-carousel testimonial-carousel position-relative">
-
-                        <div class="testimonial-item bg-light text-center border p-4">
-                            <img src="./img/testimonial-1.jpg" alt=""
-                                class="bg-white rounded-circle shadow p-1 mx-auto mb-3" style="width:80px;height:80px">
-                            <h5 class="mb-0">Alice Johnson</h5>
-                            <p>Los Angeles</p>
-                            <p class="mb-0">Excellent service and seamless booking experience! The process was smooth
-                                and
-                                efficient.</p>
-                        </div>
-
-                        <div class="testimonial-item bg-light text-center border p-4">
-                            <img src="./img/testimonial-2.jpg" alt=""
-                                class="bg-white rounded-circle shadow p-1 mx-auto mb-3" style="width:80px;height:80px">
-                            <h5 class="mb-0">Michael Smith</h5>
-                            <p>Chicago</p>
-                            <p class="mb-0">Amazing customer support and great value for money. I had a fantastic trip
-                                thanks to
-                                this service. Will definitely use it again!</p>
-                        </div>
-
-                        <div class="testimonial-item bg-light text-center border p-4">
-                            <img src="./img/testimonial-3.jpg" alt=""
-                                class="bg-white rounded-circle shadow p-1 mx-auto mb-3" style="width:80px;height:80px">
-                            <h5 class="mb-0">Sarah Brown</h5>
-                            <p>Miami</p>
-                            <p class="mb-0">The booking process was very user-friendly and the options were great. I
-                                felt
-                                very
-                                well taken care of throughout my trip.</p>
-                        </div>
-
-                        <div class="testimonial-item bg-light text-center border p-4">
-                            <img src="./img/testimonial-4.jpg" alt=""
-                                class="bg-white rounded-circle shadow p-1 mx-auto mb-3" style="width:80px;height:80px">
-                            <h5 class="mb-0">Natasha Johnson</h5>
-                            <p>San Francisco</p>
-                            <p class="mb-0">A top-notch travel booking service. Everything was handled professionally
-                                and
-                                the
-                                experience was wonderful from start to finish.</p>
-                        </div>
-
-                        <div class="testimonial-item bg-light text-center border p-4">
-                            <img src="./img/images.png" alt="" class="bg-white rounded-circle shadow p-1 mx-auto mb-3"
-                                style="width:80px;height:80px">
-                            <h5 class="mb-0">Emily Wilson</h5>
-                            <p>Seattle</p>
-                            <p class="mb-0">Great service with a personal touch. The team went above and beyond to
-                                ensure my
-                                trip
-                                was perfect. Highly recommend!</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--=========================== Footer Section=======================-->
-        <div class="container-fluid wow fadeIn  bg-dark text-light footer pt-5 mt-5" data-wow-delay="0.1s">
-            <div class="container py-5">
-                <div class="row g-5">
-                    <div class="col-lg-3 col-md-6">
-                        <h4 class="text-white mb-3">Company</h4>
-                        <a href="" class="btn btn-link">About Us</a>
-                        <a href="" class="btn btn-link">Contact Us</a>
-                        <a href="" class="btn btn-link">Privacy Policy</a>
-                        <a href="" class="btn btn-link">Terms & Condition</a>
-                        <a href="" class="btn btn-link">FAQ & Help</a>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6">
-                        <h4 class="text-white mb-3">Contact</h4>
-                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 9726461940</p>
-                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
-
-                        <!--Social icon-->
-                        <div class="d-flex pt-2">
-                            <a href="" class="btn btn-outline-light btn-social">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                            <a href="" class="btn btn-outline-light btn-social">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                            <a href="" class="btn btn-outline-light btn-social">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                            <a href="" class="btn btn-outline-light btn-social">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6">
-                        <h4 class="text-white mb-3">Gallery</h4>
-
-                        <div class="row g-2 pt-2">
-                            <div class="col-4">
-                                <img src="./img/package-1.jpg" alt="" class="img-fluid bg-light p-1">
-                            </div>
-                            <div class="col-4">
-                                <img src="./img/package-2.jpg" alt="" class="img-fluid bg-light p-1">
-                            </div>
-                            <div class="col-4">
-                                <img src="./img/package-3.jpg" alt="" class="img-fluid bg-light p-1">
-                            </div>
-                            <div class="col-4">
-                                <img src="./img/package-1.jpg" alt="" class="img-fluid bg-light p-1">
-                            </div>
-                            <div class="col-4">
-                                <img src="./img/package-2.jpg" alt="" class="img-fluid bg-light p-1">
-                            </div>
-                            <div class="col-4">
-                                <img src="./img/package-3.jpg" alt="" class="img-fluid bg-light p-1">
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <h4 class="text-white mb-3">Newsletter</h4>
-                        <p>Subscribe to our newsletter for the latest updates and exclusive offers. Stay in the loop
-                            with
-                            our travel tips and news!</p>
-
-                        <div class="position-relative mx-auto" style="max-width: 400px;">
-                            <input type="text" class="form-control border-primary w-100 py-3 ps-4 pe-5"
-                                placeholder="Your Email">
-                            <button type="button"
-                                class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- copyright -->
-            <div class="container">
-                <div class="copyright">
-                    <div class="row">
-                        <div class="col-md-6 text-center text-md-start mb-md-0">&copy; <a href=""
-                                class="border-bottom">Mastery
-                                Code</a> | All Right Reserved.</div>
-                        <div class="col-md-6 text-center text-md-end">
-                            <div class="footer-menu">
-                                <a href="" class="">Home</a>
-                                <a href="" class="">Cookies</a>
-                                <a href="" class="">Help</a>
-                                <a href="" class="">FAQs</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-        <!-- Back to Top -->
-        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top text-align-center" style="border-radius: 50%;"><i class="bi bi-arrow-up"></i></a>
+      </div>
+    </section>
 
-        <!-- JavaScript Libraries -->
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="lib/wow/wow.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/waypoints/waypoints.min.js"></script>
-        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-        <script src="lib/tempusdominus/js/moment.min.js"></script>
-        <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
-        <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.5/dist/JsBarcode.all.min.js"></script>
+    <!--================== Process start ==============================-->
+    <section class="process-section" id="process">
+      <div class="container-xxl py-5">
+        <div class="container">
+          <div class="text-center pb-4 wow fadeInUp" data-wow-delay="0.1s">
+            <h6 class="section-title text-center text-primary px-3">Process</h6>
+            <h1 class="mb-5">Easy Steps</h1>
+          </div>
 
+          <div class="row gy-5 gx-4 justify-content-center">
+            <div
+              class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp"
+              data-wow-delay="0.1s"
+            >
+              <div
+                class="position-relative border border-primary pt-5 pb-4 px-4"
+              >
+                <div
+                  class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle position-absolute top-0 start-50 translate-middle shadow"
+                  style="width: 100px; height: 100px"
+                >
+                  <i class="fa fa-globe fa-3x text-white"></i>
+                </div>
+                <h5 class="mt-4">Choose A Destination</h5>
+                <hr />
 
+                <p class="mb-0">
+                  Start your journey by selecting your desired destination.
+                  Browse through our wide range of travel options and choose the
+                  one that excites you the most. Whether it's a tropical beach
+                  or a bustling city, we have something for everyone.
+                </p>
+              </div>
+            </div>
 
+            <div
+              class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp"
+              data-wow-delay="0.3s"
+            >
+              <div
+                class="position-relative border border-primary pt-5 pb-4 px-4"
+              >
+                <div
+                  class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle position-absolute top-0 start-50 translate-middle shadow"
+                  style="width: 100px; height: 100px"
+                >
+                  <i class="fa fa-dollar-sign fa-3x text-white"></i>
+                </div>
+                <h5 class="mt-4">Select Your Package</h5>
+                <hr />
 
+                <p class="mb-0">
+                  Choose the perfect package that fits your budget and
+                  preferences. Our packages are designed to offer the best
+                  experiences at competitive prices. Review the inclusions, and
+                  select the one that meets your travel needs.
+                </p>
+              </div>
+            </div>
 
-        <!-- Template Javascript -->
-        <script src="js/main.js"></script>
-</body>
+            <div
+              class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp"
+              data-wow-delay="0.5s"
+            >
+              <div
+                class="position-relative border border-primary pt-5 pb-4 px-4"
+              >
+                <div
+                  class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle position-absolute top-0 start-50 translate-middle shadow"
+                  style="width: 100px; height: 100px"
+                >
+                  <i class="fa fa-plane fa-3x text-white"></i>
+                </div>
+                <h5 class="mt-4">Book Your Trip</h5>
+                <hr />
 
+                <p class="mb-0">
+                  Finalize your booking by providing your details and making the
+                  payment. Our easy-to-use booking system ensures a smooth and
+                  secure process. Receive your travel confirmation and prepare
+                  for an unforgettable journey.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--================== Team Section =========================-->
+    <section class="team-section" id="team">
+      <div class="container-xxl py-5">
+        <div class="container">
+          <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h6 class="section-title text-center text-primary px-3">
+              Travel Guide
+            </h6>
+            <h1 class="mb-5">Meet Our Guides</h1>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="team-item">
+                <div class="overflow-hidden">
+                  <img
+                    class="img-fluid"
+                    src="./img/team-1.jpg"
+                    alt="Guide Image"
+                  />
+                </div>
+
+                <div
+                  class="position-relative d-flex justify-content-center"
+                  style="margin-top: -19px"
+                >
+                  <a
+                    href="https://facebook.com/guide1"
+                    class="btn btn-square mx-1"
+                    target="_blank"
+                  >
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a
+                    href="https://twitter.com/guide1"
+                    class="btn btn-square mx-1"
+                    target="_blank"
+                  >
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a
+                    href="https://instagram.com/guide1"
+                    class="btn btn-square mx-1"
+                    target="_blank"
+                  >
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </div>
+
+                <div class="text-center p-4">
+                  <h5 class="mb-0">Emily Johnson</h5>
+                  <small>Thailand Specialist</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+              <div class="team-item">
+                <div class="overflow-hidden">
+                  <img
+                    class="img-fluid"
+                    src="./img/team-2.jpg"
+                    alt="Guide Image"
+                  />
+                </div>
+
+                <div
+                  class="position-relative d-flex justify-content-center"
+                  style="margin-top: -19px"
+                >
+                  <a
+                    href="https://facebook.com/guide2"
+                    class="btn btn-square mx-1"
+                    target="_blank"
+                  >
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a
+                    href="https://twitter.com/guide2"
+                    class="btn btn-square mx-1"
+                    target="_blank"
+                  >
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a
+                    href="https://instagram.com/guide2"
+                    class="btn btn-square mx-1"
+                    target="_blank"
+                  >
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </div>
+
+                <div class="text-center p-4">
+                  <h5 class="mb-0">Emily Johnson</h5>
+                  <small>Bali Expert</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+              <div class="team-item">
+                <div class="overflow-hidden">
+                  <img
+                    class="img-fluid"
+                    src="./img/team-3.jpg"
+                    alt="Guide Image"
+                  />
+                </div>
+
+                <div
+                  class="position-relative d-flex justify-content-center"
+                  style="margin-top: -19px"
+                >
+                  <a
+                    href="https://facebook.com/guide3"
+                    class="btn btn-square mx-1"
+                    target="_blank"
+                  >
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a
+                    href="https://twitter.com/guide3"
+                    class="btn btn-square mx-1"
+                    target="_blank"
+                  >
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a
+                    href="https://instagram.com/guide3"
+                    class="btn btn-square mx-1"
+                    target="_blank"
+                  >
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </div>
+
+                <div class="text-center p-4">
+                  <h5 class="mb-0">Jhon Simth</h5>
+                  <small>Paris Connoisseur</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+              <div class="team-item">
+                <div class="overflow-hidden">
+                  <img
+                    class="img-fluid"
+                    src="./img/team-4.jpg"
+                    alt="Guide Image"
+                  />
+                </div>
+
+                <div
+                  class="position-relative d-flex justify-content-center"
+                  style="margin-top: -19px"
+                >
+                  <a
+                    href="https://facebook.com/guide4"
+                    class="btn btn-square mx-1"
+                    target="_blank"
+                  >
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a
+                    href="https://twitter.com/guide4"
+                    class="btn btn-square mx-1"
+                    target="_blank"
+                  >
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a
+                    href="https://instagram.com/guide4"
+                    class="btn btn-square mx-1"
+                    target="_blank"
+                  >
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </div>
+
+                <div class="text-center p-4">
+                  <h5 class="mb-0">Liza Brown</h5>
+                  <small>Tokyo Enthusiast</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--================== Testimonial Section ==========================-->
+    <section class="pt-0 pb-5" id="testimonial">
+      <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+          <div class="text-center">
+            <h6 class="section-title text-center text-primary px-3">
+              Testimonial
+            </h6>
+            <h1 class="mb-5">Our Clients Say!!!</h1>
+          </div>
+
+          <div class="owl-carousel testimonial-carousel position-relative">
+            <div class="testimonial-item bg-light text-center border p-4">
+              <img
+                src="./img/testimonial-1.jpg"
+                alt=""
+                class="bg-white rounded-circle shadow p-1 mx-auto mb-3"
+                style="width: 80px; height: 80px"
+              />
+              <h5 class="mb-0">Alice Johnson</h5>
+              <p>Los Angeles</p>
+              <p class="mb-0">
+                Excellent service and seamless booking experience! The process
+                was smooth and efficient.
+              </p>
+            </div>
+
+            <div class="testimonial-item bg-light text-center border p-4">
+              <img
+                src="./img/testimonial-2.jpg"
+                alt=""
+                class="bg-white rounded-circle shadow p-1 mx-auto mb-3"
+                style="width: 80px; height: 80px"
+              />
+              <h5 class="mb-0">Michael Smith</h5>
+              <p>Chicago</p>
+              <p class="mb-0">
+                Amazing customer support and great value for money. I had a
+                fantastic trip thanks to this service. Will definitely use it
+                again!
+              </p>
+            </div>
+
+            <div class="testimonial-item bg-light text-center border p-4">
+              <img
+                src="./img/testimonial-3.jpg"
+                alt=""
+                class="bg-white rounded-circle shadow p-1 mx-auto mb-3"
+                style="width: 80px; height: 80px"
+              />
+              <h5 class="mb-0">Sarah Brown</h5>
+              <p>Miami</p>
+              <p class="mb-0">
+                The booking process was very user-friendly and the options were
+                great. I felt very well taken care of throughout my trip.
+              </p>
+            </div>
+
+            <div class="testimonial-item bg-light text-center border p-4">
+              <img
+                src="./img/testimonial-4.jpg"
+                alt=""
+                class="bg-white rounded-circle shadow p-1 mx-auto mb-3"
+                style="width: 80px; height: 80px"
+              />
+              <h5 class="mb-0">Natasha Johnson</h5>
+              <p>San Francisco</p>
+              <p class="mb-0">
+                A top-notch travel booking service. Everything was handled
+                professionally and the experience was wonderful from start to
+                finish.
+              </p>
+            </div>
+
+            <div class="testimonial-item bg-light text-center border p-4">
+              <img
+                src="./img/images.png"
+                alt=""
+                class="bg-white rounded-circle shadow p-1 mx-auto mb-3"
+                style="width: 80px; height: 80px"
+              />
+              <h5 class="mb-0">Emily Wilson</h5>
+              <p>Seattle</p>
+              <p class="mb-0">
+                Great service with a personal touch. The team went above and
+                beyond to ensure my trip was perfect. Highly recommend!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--=========================== Footer Section=======================-->
+    <div
+      class="container-fluid wow fadeIn bg-dark text-light footer pt-5 mt-5"
+      data-wow-delay="0.1s"
+    >
+      <div class="container py-5">
+        <div class="row g-5">
+          <div class="col-lg-3 col-md-6">
+            <h4 class="text-white mb-3">Company</h4>
+            <a href="" class="btn btn-link">About Us</a>
+            <a href="" class="btn btn-link">Contact Us</a>
+            <a href="" class="btn btn-link">Privacy Policy</a>
+            <a href="" class="btn btn-link">Terms & Condition</a>
+            <a href="" class="btn btn-link">FAQ & Help</a>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h4 class="text-white mb-3">Contact</h4>
+            <p class="mb-2">
+              <i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA
+            </p>
+            <p class="mb-2">
+              <i class="fa fa-phone-alt me-3"></i>+91 9726461940
+            </p>
+            <p class="mb-2">
+              <i class="fa fa-envelope me-3"></i>info@example.com
+            </p>
+
+            <!--Social icon-->
+            <div class="d-flex pt-2">
+              <a href="" class="btn btn-outline-light btn-social">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="" class="btn btn-outline-light btn-social">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="" class="btn btn-outline-light btn-social">
+                <i class="fab fa-youtube"></i>
+              </a>
+              <a href="" class="btn btn-outline-light btn-social">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h4 class="text-white mb-3">Gallery</h4>
+
+            <div class="row g-2 pt-2">
+              <div class="col-4">
+                <img
+                  src="./img/package-1.jpg"
+                  alt=""
+                  class="img-fluid bg-light p-1"
+                />
+              </div>
+              <div class="col-4">
+                <img
+                  src="./img/package-2.jpg"
+                  alt=""
+                  class="img-fluid bg-light p-1"
+                />
+              </div>
+              <div class="col-4">
+                <img
+                  src="./img/package-3.jpg"
+                  alt=""
+                  class="img-fluid bg-light p-1"
+                />
+              </div>
+              <div class="col-4">
+                <img
+                  src="./img/package-1.jpg"
+                  alt=""
+                  class="img-fluid bg-light p-1"
+                />
+              </div>
+              <div class="col-4">
+                <img
+                  src="./img/package-2.jpg"
+                  alt=""
+                  class="img-fluid bg-light p-1"
+                />
+              </div>
+              <div class="col-4">
+                <img
+                  src="./img/package-3.jpg"
+                  alt=""
+                  class="img-fluid bg-light p-1"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h4 class="text-white mb-3">Newsletter</h4>
+            <p>
+              Subscribe to our newsletter for the latest updates and exclusive
+              offers. Stay in the loop with our travel tips and news!
+            </p>
+
+            <div class="position-relative mx-auto" style="max-width: 400px">
+              <input
+                type="text"
+                class="form-control border-primary w-100 py-3 ps-4 pe-5"
+                placeholder="Your Email"
+              />
+              <button
+                type="button"
+                class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"
+              >
+                SignUp
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- copyright -->
+      <div class="container">
+        <div class="copyright">
+          <div class="row">
+            <div class="col-md-6 text-center text-md-start mb-md-0">
+              &copy; <a href="" class="border-bottom">Mastery Code</a> | All
+              Right Reserved.
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+              <div class="footer-menu">
+                <a href="" class="">Home</a>
+                <a href="" class="">Cookies</a>
+                <a href="" class="">Help</a>
+                <a href="" class="">FAQs</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Back to Top -->
+    <a
+      href="#"
+      class="btn btn-lg btn-primary btn-lg-square back-to-top text-align-center"
+      style="border-radius: 50%"
+      ><i class="bi bi-arrow-up"></i
+    ></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.5/dist/JsBarcode.all.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+  </body>
 </html>

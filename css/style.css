@@ -822,3 +822,25 @@ body.dark-mode .ticket-footer {
 body.dark-mode .barcode img {
     filter: brightness(0.8); /* Adjust barcode visibility in dark mode */
 }
+.btn-view-more {
+    display: block; /* Ensures the button takes up the full width available */
+    width: 200px; /* Adjust the width as needed */
+    margin: 30px auto; /* Centers the button and adds vertical spacing */
+    text-align: center; /* Centers the text inside the button */
+    border-radius: 30px; /* Adds rounded corners */
+    font-size: 16px; /* Adjusts the font size */
+    padding: 12px 0; /* Adds padding inside the button */
+    border: none; /* Removes default border */
+    background-color: var(--primary); /* Adjust background color to match btn-primary */
+    
+}
+
+.btn-link {
+    color: #aff; /* Ensures link text is white */
+    text-decoration: none; /* Removes underline from the link */
+    display: inline-block; /* Ensures the link behaves like a block inside the button */
+}
+
+.btn-link:hover {
+    text-decoration: underline; /* Optional: Adds underline on hover for better visibility */
+}
