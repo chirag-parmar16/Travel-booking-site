@@ -286,7 +286,7 @@
                     // Generate the barcode
                     JsBarcode("#barcode", bookingId, {
                         format: "CODE128",
-                        width: 2,
+                        width: 1,
                         height: 40,
                         displayValue: true
                     });
